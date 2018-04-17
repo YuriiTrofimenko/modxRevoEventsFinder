@@ -1,0 +1,5 @@
+[[$metaBase]]
+[[$headerBase]]
+[[$indexContent]]
+[[$footerBase]]
+[[$endhtmlBase]]

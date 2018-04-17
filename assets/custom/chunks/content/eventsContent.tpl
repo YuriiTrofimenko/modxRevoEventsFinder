@@ -1,0 +1,9 @@
+[[!pdoPage?
+    &element=`getTickets`
+    &parents=`2`
+    &tpl=`[[+pagetitle]]`
+    &includeContent=`1`
+    &includeTVs=`img`
+    &processTVs=`1`
+]]
+<p>text</p>
