@@ -8,3 +8,6 @@
 [2018-04-18 09:59:24] (ERROR @ C:\OSPanel\domains\localhost\core\components\pdotools\model\pdotools\pdofetch.class.php : 172) [pdoTools] Error 42S22: Unknown column 'modResource.pagetitle' in 'field list'
 [2018-04-18 09:59:49] (ERROR @ C:\OSPanel\domains\localhost\core\components\pdotools\model\pdotools\pdofetch.class.php : 172) [pdoTools] Error 42S22: Unknown column 'modResource.pagetitle' in 'field list'
 [2018-04-18 12:16:56] (ERROR @ C:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 317) Could not cache resource 1
+[2018-04-23 09:44:28] (ERROR @ C:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/resource
+[2018-04-23 10:30:55] (ERROR @ C:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 811) modTemplateVarTemplate: Attempt to set NOT NULL field rank to NULL
+[2018-04-23 10:30:55] (ERROR @ C:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 811) modTemplateVarTemplate: Attempt to set NOT NULL field rank to NULL

@@ -45,11 +45,22 @@ p {
   }
 }
 
+/*@media only screen and (max-width: 992px) {
+ nav .brand-logo {
+  left:50%;
+  -webkit-transform:translateX(0%) !important;
+  transform:translateX(0%) !important
+ }*/
+
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
   font-size: inherit;
+}
+
+.card-title #date{
+  font-size: 14px
 }
 
 footer.page-footer {

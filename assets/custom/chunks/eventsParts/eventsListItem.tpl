@@ -1,6 +1,20 @@
-[[+pagetitle]]
-[[+content]]
-<img src="[[+img:phpthumbof=`w=300&h=300&zc=1`]]" alt="image">
+<div class="col s12 m6 l4 xl3">
+    <div class="card">
+        <div class="card-image">
+          <img src="[[+img:phpthumbof=`w=300&h=300&zc=1`]]">
+          <div class="card-title">
+          	<div>[[+pagetitle]]</div>
+          	<div id="date">[[+date:strtotime:date=`%d.%m.%Y`]]</div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p>[[+content:ellipsis=`50`]]</p>
+        </div>
+        <div class="card-action">
+          <a href="[[~[[+id]]]]">This is a link</a>
+        </div>
+      </div>
+</div>
 <!-- <div class="tickets-row">
     <h3 class="title"><a href="[[~[[+id]]]]">[[+pagetitle]]</a></h3>
 	<div class="content">
