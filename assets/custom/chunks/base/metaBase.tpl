@@ -9,7 +9,8 @@
             <!--Let browser know website is optimized for mobile-->
             <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
             <!-- Magnific Popup core CSS file -->
-            <link rel="stylesheet" href="/assets/design/css/magnific-popup.css">
+            <!-- <link rel="stylesheet" href="/assets/design/css/magnific-popup.css"> -->
+            <base href="[[++site_url]]" />
         </link>
     </head>
     <body>

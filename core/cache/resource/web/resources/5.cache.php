@@ -1,76 +1,50 @@
 <?php  return array (
-  'resourceClass' => 'Ticket',
+  'resourceClass' => 'modDocument',
   'resource' => 
   array (
-    'id' => 4,
+    'id' => 5,
     'type' => 'document',
     'contentType' => 'text/html',
-    'pagetitle' => 'Событие 2',
+    'pagetitle' => 'Test',
     'longtitle' => '',
     'description' => '',
-    'alias' => 'событие-2',
+    'alias' => 'test',
     'link_attributes' => '',
     'published' => 1,
     'pub_date' => 0,
     'unpub_date' => 0,
-    'parent' => 2,
+    'parent' => 0,
     'isfolder' => 0,
-    'introtext' => 'Could not load snippet Jevix',
-    'content' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    'introtext' => '',
+    'content' => '',
     'richtext' => 1,
-    'template' => 3,
-    'menuindex' => 1,
+    'template' => 4,
+    'menuindex' => 2,
     'searchable' => 1,
     'cacheable' => 1,
     'createdby' => 1,
-    'createdon' => 1523954580,
+    'createdon' => 1524556452,
     'editedby' => 1,
-    'editedon' => 1524468886,
+    'editedon' => 1524557017,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
-    'publishedon' => 1523954580,
+    'publishedon' => 1524556440,
     'publishedby' => 1,
     'menutitle' => '',
     'donthit' => 0,
     'privateweb' => 0,
     'privatemgr' => 0,
     'content_dispo' => 0,
-    'hidemenu' => 1,
-    'class_key' => 'Ticket',
+    'hidemenu' => 0,
+    'class_key' => 'modDocument',
     'context_key' => 'web',
     'content_type' => 1,
-    'uri' => 'events/4-событие-2',
-    'uri_override' => 1,
+    'uri' => 'test',
+    'uri_override' => 0,
     'hide_children_in_tree' => 0,
     'show_in_tree' => 1,
-    'properties' => '{"tickets":{"disable_jevix":true,"process_tags":false}}',
-    'img' => 
-    array (
-      0 => 'img',
-      1 => 'assets/uploads/Desert.jpg',
-      2 => 'text',
-      3 => NULL,
-      4 => 'image',
-    ),
-    'date' => 
-    array (
-      0 => 'date',
-      1 => '2018-05-02 10:17:00',
-      2 => 'text',
-      3 => NULL,
-      4 => 'date',
-    ),
-    'comments' => 0,
-    'views' => 0,
-    'date_ago' => '17 апреля 2018, 11:43',
-    'stars' => 0,
-    'rating' => 0,
-    'rating_total' => 0,
-    'rating_plus' => 0,
-    'rating_minus' => 0,
-    'voted' => 0,
-    'can_vote' => false,
+    'properties' => NULL,
     '_content' => '<!DOCTYPE html>
 <html>
     <head>
@@ -82,7 +56,8 @@
             <!--Let browser know website is optimized for mobile-->
             <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
             <!-- Magnific Popup core CSS file -->
-            <link rel="stylesheet" href="/assets/design/css/magnific-popup.css">
+            <!-- <link rel="stylesheet" href="/assets/design/css/magnific-popup.css"> -->
+            <base href="http://localhost/" />
         </link>
     </head>
     <body>
@@ -92,10 +67,10 @@
             Поиск событий
         </a>
         <ul class="right hide-on-med-and-down">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="last active"><a href="events" >События</a></li>
+  <li  class="first"><a href="/" >Главная</a></li><li ><a href="events" >События</a></li><li  class="last active"><a href="test" >Test</a></li>
 </ul>
         <ul id="nav-mobile" class="side-nav">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="last active"><a href="events" >События</a></li>
+  <li  class="first"><a href="/" >Главная</a></li><li ><a href="events" >События</a></li><li  class="last active"><a href="test" >Test</a></li>
 </ul>
         <a class="button-collapse" data-activates="nav-mobile" href="#">
             <i class="material-icons">
@@ -104,33 +79,14 @@
         </a>
     </div>
 </nav>
-<div class="container">
-	<h4>
-        Событие 2
-    </h4>
-    <div class="row">
-    	<div class="col s4 m4 l4 xl4">
-	        <div class="card">
-		        <div class="card-image">
-		        	<a class="image-link" href="assets/uploads/Desert.jpg"><img src="/assets/components/phpthumbof/cache/Desert.d9ffc2ce066f23b69f2b31c839306ac14.jpg"></a>
-		        </div>
-		    </div>
-        </div>
-        <div class="col s8 m8 l8 xl8">
-        	<div>Дата: 02.05.2018</div>
-        	<hr>
-        	<div>
-        		<h6>Описание:</h6>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        	</div>
-        </div>
-    </div>
-</div>
+
+<!-- <br> -->
+[[!parser]]
 
 		<script src="/assets/design/js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="/assets/design/js/materialize.min.js" type="text/javascript"></script>
         <!-- Magnific Popup core JS file -->
-		<script src="/assets/design/js/jquery.magnific-popup.min.js"></script>
+		<!-- <script src="/assets/design/js/jquery.magnific-popup.min.js"></script> -->
         <script src="/assets/design/js/custom.js" type="text/javascript"></script>
     </body>
 </html>',
@@ -162,7 +118,8 @@
             <!--Let browser know website is optimized for mobile-->
             <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
             <!-- Magnific Popup core CSS file -->
-            <link rel="stylesheet" href="/assets/design/css/magnific-popup.css">
+            <!-- <link rel="stylesheet" href="/assets/design/css/magnific-popup.css"> -->
+            <base href="http://localhost/" />
         </link>
     </head>
     <body>',
@@ -172,7 +129,7 @@
             &tpl=`menuItem`
             &tplOuter=`menuOuter`
         ]]' => '<ul class="right hide-on-med-and-down">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="last active"><a href="events" >События</a></li>
+  <li  class="first"><a href="/" >Главная</a></li><li ><a href="events" >События</a></li><li  class="last active"><a href="test" >Test</a></li>
 </ul>',
     '[[pdoMenu?
             &parents=`0`
@@ -180,7 +137,7 @@
             &tpl=`menuItem`
             &tplOuter=`menuOuterMobile`
         ]]' => '<ul id="nav-mobile" class="side-nav">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="last active"><a href="events" >События</a></li>
+  <li  class="first"><a href="/" >Главная</a></li><li ><a href="events" >События</a></li><li  class="last active"><a href="test" >Test</a></li>
 </ul>',
     '[[$headerBase]]' => '<nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -188,10 +145,10 @@
             Поиск событий
         </a>
         <ul class="right hide-on-med-and-down">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="last active"><a href="events" >События</a></li>
+  <li  class="first"><a href="/" >Главная</a></li><li ><a href="events" >События</a></li><li  class="last active"><a href="test" >Test</a></li>
 </ul>
         <ul id="nav-mobile" class="side-nav">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="last active"><a href="events" >События</a></li>
+  <li  class="first"><a href="/" >Главная</a></li><li ><a href="events" >События</a></li><li  class="last active"><a href="test" >Test</a></li>
 </ul>
         <a class="button-collapse" data-activates="nav-mobile" href="#">
             <i class="material-icons">
@@ -200,33 +157,14 @@
         </a>
     </div>
 </nav>',
-    '[[$eventDetailsContent]]' => '<div class="container">
-	<h4>
-        Событие 2
-    </h4>
-    <div class="row">
-    	<div class="col s4 m4 l4 xl4">
-	        <div class="card">
-		        <div class="card-image">
-		        	<a class="image-link" href="assets/uploads/Desert.jpg"><img src="/assets/components/phpthumbof/cache/Desert.d9ffc2ce066f23b69f2b31c839306ac14.jpg"></a>
-		        </div>
-		    </div>
-        </div>
-        <div class="col s8 m8 l8 xl8">
-        	<div>Дата: 02.05.2018</div>
-        	<hr>
-        	<div>
-        		<h6>Описание:</h6>
-        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        	</div>
-        </div>
-    </div>
-</div>',
+    '[[$testContent]]' => '
+<!-- <br> -->
+[[!parser]]',
     '[[$footerBase]]' => '',
     '[[$endhtmlBase]]' => '		<script src="/assets/design/js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="/assets/design/js/materialize.min.js" type="text/javascript"></script>
         <!-- Magnific Popup core JS file -->
-		<script src="/assets/design/js/jquery.magnific-popup.min.js"></script>
+		<!-- <script src="/assets/design/js/jquery.magnific-popup.min.js"></script> -->
         <script src="/assets/design/js/custom.js" type="text/javascript"></script>
     </body>
 </html>',
@@ -258,7 +196,8 @@
             <!--Let browser know website is optimized for mobile-->
             <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
             <!-- Magnific Popup core CSS file -->
-            <link rel="stylesheet" href="/assets/design/css/magnific-popup/magnific-popup.css">
+            <!-- <link rel="stylesheet" href="/assets/design/css/magnific-popup.css"> -->
+            <base href="[[++site_url]]" />
         </link>
     </head>
     <body>',
@@ -279,7 +218,8 @@
             <!--Let browser know website is optimized for mobile-->
             <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
             <!-- Magnific Popup core CSS file -->
-            <link rel="stylesheet" href="/assets/design/css/magnific-popup/magnific-popup.css">
+            <!-- <link rel="stylesheet" href="/assets/design/css/magnific-popup.css"> -->
+            <base href="[[++site_url]]" />
         </link>
     </head>
     <body>',
@@ -381,68 +321,34 @@
           'is_stream' => true,
         ),
       ),
-      'eventDetailsContent' => 
+      'testContent' => 
       array (
         'fields' => 
         array (
-          'id' => 40,
+          'id' => 41,
           'source' => 1,
           'property_preprocess' => false,
-          'name' => 'eventDetailsContent',
+          'name' => 'testContent',
           'description' => '',
           'editor_type' => 0,
           'category' => 3,
           'cache_type' => 0,
-          'snippet' => '<div class="container">
-	<h4>
-        [[*pagetitle]]
-    </h4>
-    <div class="row">
-    	<div class="col s4 m4 l4 xl4">
-	        <div class="card">
-		        <div class="card-image">
-		        	<a class="image-link" href="[[*img]]"><img src="[[*img:phpthumbof=`w=300&h=300&zc=1`]]"></a>
-		        </div>
-		    </div>
-        </div>
-        <div class="col s8 m8 l8 xl8">
-        	<div>Дата: [[*date:strtotime:date=`%d.%m.%Y`]]</div>
-        	<hr>
-        	<div>
-        		<h6>Описание:</h6>
-        		<p>[[*content]]</p>
-        	</div>
-        </div>
-    </div>
-</div>',
+          'snippet' => '[[--!parser?
+    &date=`12.05.2018`
+]]
+<!-- <br> -->
+[[!parser]]',
           'locked' => false,
           'properties' => 
           array (
           ),
           'static' => true,
-          'static_file' => 'assets/custom/chunks/content/eventDetailsContent.tpl',
-          'content' => '<div class="container">
-	<h4>
-        [[*pagetitle]]
-    </h4>
-    <div class="row">
-    	<div class="col s4 m4 l4 xl4">
-	        <div class="card">
-		        <div class="card-image">
-		        	<a class="image-link" href="[[*img]]"><img src="[[*img:phpthumbof=`w=300&h=300&zc=1`]]"></a>
-		        </div>
-		    </div>
-        </div>
-        <div class="col s8 m8 l8 xl8">
-        	<div>Дата: [[*date:strtotime:date=`%d.%m.%Y`]]</div>
-        	<hr>
-        	<div>
-        		<h6>Описание:</h6>
-        		<p>[[*content]]</p>
-        	</div>
-        </div>
-    </div>
-</div>',
+          'static_file' => 'assets/custom/chunks/content/testContent.tpl',
+          'content' => '[[--!parser?
+    &date=`12.05.2018`
+]]
+<!-- <br> -->
+[[!parser]]',
         ),
         'policies' => 
         array (
@@ -510,7 +416,7 @@
           'snippet' => '		<script src="/assets/design/js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="/assets/design/js/materialize.min.js" type="text/javascript"></script>
         <!-- Magnific Popup core JS file -->
-		<script src="/assets/design/js/jquery.magnific-popup.min.js"></script>
+		<!-- <script src="/assets/design/js/jquery.magnific-popup.min.js"></script> -->
         <script src="/assets/design/js/custom.js" type="text/javascript"></script>
     </body>
 </html>',
@@ -523,7 +429,7 @@
           'content' => '		<script src="/assets/design/js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="/assets/design/js/materialize.min.js" type="text/javascript"></script>
         <!-- Magnific Popup core JS file -->
-		<script src="/assets/design/js/jquery.magnific-popup.min.js"></script>
+		<!-- <script src="/assets/design/js/jquery.magnific-popup.min.js"></script> -->
         <script src="/assets/design/js/custom.js" type="text/javascript"></script>
     </body>
 </html>',
@@ -1701,240 +1607,144 @@ if (!empty($toPlaceholder)) {
           'is_stream' => true,
         ),
       ),
-      'phpthumbof' => 
+      'parser' => 
       array (
         'fields' => 
         array (
-          'id' => 19,
-          'source' => 0,
+          'id' => 20,
+          'source' => 1,
           'property_preprocess' => false,
-          'name' => 'phpthumbof',
-          'description' => 'A custom output filter that generates thumbnails securely with phpThumb.',
+          'name' => 'parser',
+          'description' => '',
           'editor_type' => 0,
-          'category' => 0,
+          'category' => 7,
           'cache_type' => 0,
-          'snippet' => '/**
- * phpThumbOf
- *
- * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>
- *
- * phpThumbOf is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option) any
- * later version.
- *
- * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY
- * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
- * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple
- * Place, Suite 330, Boston, MA 02111-1307 USA
- *
- * @package phpthumbof
- */
-/**
- * A custom output filter for phpThumb
- *
- * @var modX $modx
- * @var array $scriptProperties
- * @var phpThumbOf $phpThumbOf
- * @var string $input
- * @var string|array $options
- *
- * @package phpthumbof
- */
-if (empty($modx)) return \'\';
-if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model/phpthumb/\',true,true)) {
-    $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class.\');
-    return \'\';
-}
-if (empty($input)) {
-    $modx->log(modX::LOG_LEVEL_DEBUG,\'[phpThumbOf] Empty image path passed, aborting.\');
-    return \'\';
-}
-$modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components/phpthumbof/\').\'model/\';
-require_once $modelPath.\'phpthumbof/phpthumbof.class.php\';
-$phpThumbOf = new phpThumbOf($modx,$scriptProperties);
+          'snippet' => '/*define(\'MODX_API_MODE\', true);
+include_once \'../../../manager/includes/config.inc.php\';
+include_once \'../../../manager/includes/document.parser.class.inc.php\';
+$modx = new DocumentParser();
+$modx->db->connect();
+$modx->getSettings();
+startCMSSession();
+$modx->minParserPasses = 2;*/
 
-$phpThumbOf->getCacheDirectory();
-$phpThumbOf->ensureCacheDirectoryIsWritable();
+require_once(\'/assets/custom/snippets/phpQuery-onefile.php\');
+//echo "hello!";
+//return "world!";
+/*if (isset($date)) {
 
-$thumbnail = $phpThumbOf->createThumbnailObject();
-$thumbnail->setInput($input);
-$thumbnail->setOptions($options);
-$thumbnail->initializeService();
-return $thumbnail->render();',
+	return "date is: $date";
+} else {
+
+	return "date is: default date";
+}*/
+$base_url = "http://afisha.gidmariupol.com";
+$day7 = "/index/index/day/7";
+
+$data = file_get_contents($base_url.$day7);
+//var_dump($data);
+//$doc = new DOMDocument();
+//$doc->loadHTML($data);
+//var_dump($doc);
+//$searchNodes = $doc->getElementsByTagName("a");
+//"div#graph-content > div"
+//return $searchNodes[20]->getAttribute(\'href\');
+
+//$xpath = new DOMXPath($doc);
+//$nlist = $xpath->query("//*[@id=\'graph-content\']/div[1]");
+
+//var_dump($nlist);
+
+//var_dump($doc[\'div#graph-content > div\']);
+//Обрабатываем переменную с помощью phpQuery:
+
+$document = phpQuery::newDocument($page); //Загружаем полученную страницу в phpQuery
+$hentry = $document->find(\'.div#graph-content > div\'); //Находим элементы
+var_dump($hentry);
+foreach ($hentry as $el) {
+ $elem_pq = pq($el); //pq - аналог $ в jQuery
+ var_dump($elem_pq);
+ echo "<br>";
+ //$url = $elem_pq->attr(\'href\');
+ //$text = trim($elem_pq->text());
+ //...
+}',
           'locked' => false,
-          'properties' => NULL,
+          'properties' => 
+          array (
+          ),
           'moduleguid' => '',
-          'static' => false,
-          'static_file' => '',
-          'content' => '/**
- * phpThumbOf
- *
- * Copyright 2009-2012 by Shaun McCormick <shaun@modx.com>
- *
- * phpThumbOf is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option) any
- * later version.
- *
- * phpThumbOf is distributed in the hope that it will be useful, but WITHOUT ANY
- * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
- * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along with
- * phpThumbOf; if not, write to the Free Software Foundation, Inc., 59 Temple
- * Place, Suite 330, Boston, MA 02111-1307 USA
- *
- * @package phpthumbof
- */
-/**
- * A custom output filter for phpThumb
- *
- * @var modX $modx
- * @var array $scriptProperties
- * @var phpThumbOf $phpThumbOf
- * @var string $input
- * @var string|array $options
- *
- * @package phpthumbof
- */
-if (empty($modx)) return \'\';
-if (!$modx->loadClass(\'modPhpThumb\',$modx->getOption(\'core_path\').\'model/phpthumb/\',true,true)) {
-    $modx->log(modX::LOG_LEVEL_ERROR,\'[phpThumbOf] Could not load modPhpThumb class.\');
-    return \'\';
-}
-if (empty($input)) {
-    $modx->log(modX::LOG_LEVEL_DEBUG,\'[phpThumbOf] Empty image path passed, aborting.\');
-    return \'\';
-}
-$modelPath = $modx->getOption(\'phpthumbof.core_path\',null,$modx->getOption(\'core_path\').\'components/phpthumbof/\').\'model/\';
-require_once $modelPath.\'phpthumbof/phpthumbof.class.php\';
-$phpThumbOf = new phpThumbOf($modx,$scriptProperties);
+          'static' => true,
+          'static_file' => 'assets/custom/snippets/parser.php',
+          'content' => '/*define(\'MODX_API_MODE\', true);
+include_once \'../../../manager/includes/config.inc.php\';
+include_once \'../../../manager/includes/document.parser.class.inc.php\';
+$modx = new DocumentParser();
+$modx->db->connect();
+$modx->getSettings();
+startCMSSession();
+$modx->minParserPasses = 2;*/
 
-$phpThumbOf->getCacheDirectory();
-$phpThumbOf->ensureCacheDirectoryIsWritable();
+require_once(\'/assets/custom/snippets/phpQuery-onefile.php\');
+//echo "hello!";
+//return "world!";
+/*if (isset($date)) {
 
-$thumbnail = $phpThumbOf->createThumbnailObject();
-$thumbnail->setInput($input);
-$thumbnail->setOptions($options);
-$thumbnail->initializeService();
-return $thumbnail->render();',
+	return "date is: $date";
+} else {
+
+	return "date is: default date";
+}*/
+$base_url = "http://afisha.gidmariupol.com";
+$day7 = "/index/index/day/7";
+
+$data = file_get_contents($base_url.$day7);
+//var_dump($data);
+//$doc = new DOMDocument();
+//$doc->loadHTML($data);
+//var_dump($doc);
+//$searchNodes = $doc->getElementsByTagName("a");
+//"div#graph-content > div"
+//return $searchNodes[20]->getAttribute(\'href\');
+
+//$xpath = new DOMXPath($doc);
+//$nlist = $xpath->query("//*[@id=\'graph-content\']/div[1]");
+
+//var_dump($nlist);
+
+//var_dump($doc[\'div#graph-content > div\']);
+//Обрабатываем переменную с помощью phpQuery:
+
+$document = phpQuery::newDocument($page); //Загружаем полученную страницу в phpQuery
+$hentry = $document->find(\'.div#graph-content > div\'); //Находим элементы
+var_dump($hentry);
+foreach ($hentry as $el) {
+ $elem_pq = pq($el); //pq - аналог $ в jQuery
+ var_dump($elem_pq);
+ echo "<br>";
+ //$url = $elem_pq->attr(\'href\');
+ //$text = trim($elem_pq->text());
+ //...
+}',
         ),
         'policies' => 
         array (
         ),
         'source' => 
         array (
+          'id' => 1,
+          'name' => 'Filesystem',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+          ),
+          'is_stream' => true,
         ),
       ),
     ),
     'modTemplateVar' => 
     array (
-      'img' => 
-      array (
-        'fields' => 
-        array (
-          'id' => 1,
-          'source' => 1,
-          'property_preprocess' => false,
-          'type' => 'image',
-          'name' => 'img',
-          'caption' => 'image',
-          'description' => '',
-          'editor_type' => 0,
-          'category' => 0,
-          'locked' => false,
-          'elements' => '',
-          'rank' => 0,
-          'display' => 'text',
-          'default_text' => '',
-          'properties' => 
-          array (
-          ),
-          'input_properties' => 
-          array (
-          ),
-          'output_properties' => 
-          array (
-          ),
-          'static' => false,
-          'static_file' => '',
-          'content' => '',
-        ),
-        'policies' => 
-        array (
-        ),
-        'source' => 
-        array (
-          'id' => 1,
-          'name' => 'Filesystem',
-          'description' => '',
-          'class_key' => 'sources.modFileMediaSource',
-          'properties' => 
-          array (
-          ),
-          'is_stream' => true,
-        ),
-      ),
-      'date' => 
-      array (
-        'fields' => 
-        array (
-          'id' => 2,
-          'source' => 1,
-          'property_preprocess' => false,
-          'type' => 'date',
-          'name' => 'date',
-          'caption' => 'date',
-          'description' => '',
-          'editor_type' => 0,
-          'category' => 0,
-          'locked' => false,
-          'elements' => '',
-          'rank' => 0,
-          'display' => 'text',
-          'default_text' => '',
-          'properties' => 
-          array (
-          ),
-          'input_properties' => 
-          array (
-            'allowBlank' => 'true',
-            'disabledDates' => '',
-            'disabledDays' => '',
-            'minDateValue' => '',
-            'minTimeValue' => '',
-            'maxDateValue' => '',
-            'maxTimeValue' => '',
-            'startDay' => '',
-            'timeIncrement' => '',
-            'hideTime' => 'false',
-          ),
-          'output_properties' => 
-          array (
-          ),
-          'static' => false,
-          'static_file' => '',
-          'content' => '',
-        ),
-        'policies' => 
-        array (
-        ),
-        'source' => 
-        array (
-          'id' => 1,
-          'name' => 'Filesystem',
-          'description' => '',
-          'class_key' => 'sources.modFileMediaSource',
-          'properties' => 
-          array (
-          ),
-          'is_stream' => true,
-        ),
-      ),
     ),
   ),
 );

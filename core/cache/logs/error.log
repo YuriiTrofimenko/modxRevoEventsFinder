@@ -11,3 +11,112 @@
 [2018-04-23 09:44:28] (ERROR @ C:\OSPanel\domains\localhost\core\model\modx\modcachemanager.class.php : 344) Error caching lexicon topic lexicon/ru/core/resource
 [2018-04-23 10:30:55] (ERROR @ C:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 811) modTemplateVarTemplate: Attempt to set NOT NULL field rank to NULL
 [2018-04-23 10:30:55] (ERROR @ C:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 811) modTemplateVarTemplate: Attempt to set NOT NULL field rank to NULL
+[2018-04-24 10:05:37] (ERROR @ C:\OSPanel\domains\localhost\core\model\modx\modx.class.php : 990) `[*id` is not a valid integer and may not be passed to makeUrl()
+[2018-04-24 10:05:37] (ERROR in resource 4 @ C:\OSPanel\domains\localhost\core\model\modx\modparser.class.php : 1373) Bad link tag `[[~[*id]]` encountered
+[2018-04-24 10:11:39] (ERROR @ C:\OSPanel\domains\localhost\core\model\modx\modx.class.php : 990) `[[+id]]]#_" class="lightbox" id="lightbox">
+	<img src="assets/uploads/Desert.jpg">
+</a>
+<div class="container">
+	<h4>
+        Событие 2
+    </h4>
+    <div class="row">
+    	<div class="col s4 m4 l4 xl4">
+	        <div class="card">
+		        <div class="card-image">
+		        	<a href="#lightbox">
+				  		<img src="/assets/components/phpthumbof/cache/Desert.d9ffc2ce066f23b69f2b31c839306ac14.jpg">
+					</a>
+		        </div>
+		        <!-- thumbnail image wrapped in a link -->
+		    </div>
+        </div>
+        <div class="col s8 m8 l8 xl8">
+        	<div>Дата` is not a valid integer and may not be passed to makeUrl()
+[2018-04-24 10:11:39] (ERROR in resource 4 @ C:\OSPanel\domains\localhost\core\model\modx\modparser.class.php : 1373) Bad link tag `[[~[[+id]]]#_" class="lightbox" id="lightbox">
+	<img src="assets/uploads/Desert.jpg">
+</a>
+<div class="container">
+	<h4>
+        Событие 2
+    </h4>
+    <div class="row">
+    	<div class="col s4 m4 l4 xl4">
+	        <div class="card">
+		        <div class="card-image">
+		        	<a href="#lightbox">
+				  		<img src="/assets/components/phpthumbof/cache/Desert.d9ffc2ce066f23b69f2b31c839306ac14.jpg">
+					</a>
+		        </div>
+		        <!-- thumbnail image wrapped in a link -->
+		    </div>
+        </div>
+        <div class="col s8 m8 l8 xl8">
+        	<div>Дата: 02.05.2018</div>
+        	<hr>
+        	<div>
+        		<h6>Описание:</h6>
+        		<p>[[*content]]` encountered
+[2018-04-24 10:12:19] (ERROR @ C:\OSPanel\domains\localhost\core\model\modx\modx.class.php : 990) `[[+id]]` is not a valid integer and may not be passed to makeUrl()
+[2018-04-24 10:12:19] (ERROR in resource 4 @ C:\OSPanel\domains\localhost\core\model\modx\modparser.class.php : 1373) Bad link tag `[[~[[+id]]]]` encountered
+[2018-04-24 11:19:25] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 46
+[2018-04-24 11:19:25] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 78
+[2018-04-24 11:19:25] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 187
+[2018-04-24 11:19:25] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 759
+[2018-04-24 11:19:25] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 799
+[2018-04-24 11:19:25] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : p in Entity, line: 1271
+[2018-04-24 11:20:02] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 46
+[2018-04-24 11:20:02] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 78
+[2018-04-24 11:20:02] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 187
+[2018-04-24 11:20:02] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 759
+[2018-04-24 11:20:02] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 799
+[2018-04-24 11:20:02] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : p in Entity, line: 1271
+[2018-04-24 11:20:30] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 46
+[2018-04-24 11:20:30] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 78
+[2018-04-24 11:20:30] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 187
+[2018-04-24 11:20:30] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 759
+[2018-04-24 11:20:30] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 799
+[2018-04-24 11:20:30] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 16) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : p in Entity, line: 1271
+[2018-04-24 11:25:17] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 46
+[2018-04-24 11:25:17] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 78
+[2018-04-24 11:25:17] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 187
+[2018-04-24 11:25:17] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 293
+[2018-04-24 11:25:17] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 381
+[2018-04-24 11:25:17] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 446
+[2018-04-24 11:25:17] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : p in Entity, line: 665
+[2018-04-24 11:38:38] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 46
+[2018-04-24 11:38:38] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 78
+[2018-04-24 11:38:38] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 187
+[2018-04-24 11:38:38] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 293
+[2018-04-24 11:38:38] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 381
+[2018-04-24 11:38:38] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 446
+[2018-04-24 11:38:38] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : p in Entity, line: 665
+[2018-04-24 11:41:20] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 46
+[2018-04-24 11:41:20] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Tag noindex invalid in Entity, line: 78
+[2018-04-24 11:41:20] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): error parsing attribute name in Entity, line: 187
+[2018-04-24 11:41:20] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 293
+[2018-04-24 11:41:20] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 381
+[2018-04-24 11:41:20] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : a in Entity, line: 446
+[2018-04-24 11:41:20] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 18) PHP warning: DOMDocument::loadHTML(): Unexpected end tag : p in Entity, line: 665
+[2018-04-24 11:57:23] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 3) PHP warning: require_once(phpQuery-onefile.php): failed to open stream: No such file or directory
+[2018-04-24 12:03:07] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(manager/includes/config.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:03:07] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(): Failed opening 'manager/includes/config.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:03:07] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 6) PHP warning: include_once(manager/includes/document.parser.class.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:03:07] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 6) PHP warning: include_once(): Failed opening 'manager/includes/document.parser.class.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:03:32] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 4) PHP warning: include_once(manager/includes/config.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:03:32] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 4) PHP warning: include_once(): Failed opening 'manager/includes/config.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:03:32] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(manager/includes/document.parser.class.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:03:32] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(): Failed opening 'manager/includes/document.parser.class.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:04:29] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 4) PHP warning: include_once(../../../manager/includes/config.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:04:29] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 4) PHP warning: include_once(): Failed opening '../../../manager/includes/config.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:04:29] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(../../../manager/includes/document.parser.class.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:04:29] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(): Failed opening '../../../manager/includes/document.parser.class.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:04:43] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 4) PHP warning: include_once(../../../manager/includes/config.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:04:43] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 4) PHP warning: include_once(): Failed opening '../../../manager/includes/config.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:04:43] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(../../../manager/includes/document.parser.class.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:04:43] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(): Failed opening '../../../manager/includes/document.parser.class.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:04:52] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 4) PHP warning: include_once(../../../manager/includes/config.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:04:52] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 4) PHP warning: include_once(): Failed opening '../../../manager/includes/config.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:04:52] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(../../../manager/includes/document.parser.class.inc.php): failed to open stream: No such file or directory
+[2018-04-24 12:04:52] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(): Failed opening '../../../manager/includes/document.parser.class.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
+[2018-04-24 12:13:55] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 12) PHP warning: require_once(phpQuery-onefile.php): failed to open stream: No such file or directory
