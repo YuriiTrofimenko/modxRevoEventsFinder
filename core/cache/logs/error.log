@@ -120,3 +120,12 @@
 [2018-04-24 12:04:52] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(../../../manager/includes/document.parser.class.inc.php): failed to open stream: No such file or directory
 [2018-04-24 12:04:52] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 5) PHP warning: include_once(): Failed opening '../../../manager/includes/document.parser.class.inc.php' for inclusion (include_path='.;c:/ospanel/modules/php/PHP-5.6;c:/ospanel/modules/php/PHP-5.6/PEAR/pear')
 [2018-04-24 12:13:55] (ERROR @ C:\OSPanel\domains\localhost\core\cache\includes\elements\modsnippet\20.include.cache.php : 12) PHP warning: require_once(phpQuery-onefile.php): failed to open stream: No such file or directory
+[2018-04-25 11:36:05] (ERROR @ C:\OSPanel\domains\localhost\core\xpdo\om\xpdoobject.class.php : 1452) Error 23000 executing statement:
+INSERT INTO `modx_session` (`id`, `access`, `data`) VALUES ('ofiqhsmcm1sob5vt97mkll5m75', 1524645365, 'modx.user.0.resourceGroups|a:1:{s:3:\"mgr\";a:0:{}}modx.user.0.attributes|a:1:{s:3:\"mgr\";a:5:{s:16:\"modAccessContext\";a:1:{s:3:\"web\";a:1:{i:0;a:3:{s:9:\"principal\";i:0;s:9:\"authority\";s:1:\"0\";s:6:\"policy\";a:1:{s:4:\"load\";b:1;}}}}s:22:\"modAccessResourceGroup\";a:0:{}s:17:\"modAccessCategory\";a:0:{}s:28:\"sources.modAccessMediaSource\";a:0:{}s:18:\"modAccessNamespace\";a:0:{}}}')
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry 'ofiqhsmcm1sob5vt97mkll5m75' for key 'PRIMARY'
+)
+
