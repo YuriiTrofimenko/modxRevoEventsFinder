@@ -8,6 +8,14 @@
     'events' => 2,
     'test' => 5,
     'events/3-событие-1' => 3,
+    'karaoke-party-night' => 54,
+    'narodnyy-byt' => 55,
+    'ekzoticheskie-zhivotnye' => 58,
+    'derevyannaya-skul-ptura' => 60,
+    'lyubimyy-gorod-mariupol-240-let' => 62,
+    'events/75-medal-ernoe-iskusstvo' => 75,
+    'events/76-kraevedcheskie-vystavki' => 76,
+    'morskaya-flora-i-fauna' => 77,
     'events/4-событие-2' => 4,
   ),
   'resourceMap' => 
@@ -21,7 +29,15 @@
     2 => 
     array (
       0 => 3,
-      1 => 4,
+      1 => 54,
+      2 => 55,
+      3 => 58,
+      4 => 60,
+      5 => 62,
+      6 => 75,
+      7 => 76,
+      8 => 77,
+      9 => 4,
     ),
   ),
   'webLinkMap' => 

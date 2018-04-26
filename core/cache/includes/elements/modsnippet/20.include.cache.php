@@ -1,4 +1,5 @@
 <?php
+
 require_once('/assets/custom/snippets/phpQuery-onefile.php');
 require_once('/assets/custom/snippets/ticketCreator.php');
 
@@ -88,3 +89,4 @@ foreach ($hentry as $el) {
 	
  	
 }
+return;
