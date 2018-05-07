@@ -50,9 +50,9 @@
     'show_in_tree' => 1,
     'properties' => '{"tickets":{"template":"0","uri":"%id-%alias%ext","show_in_tree":false,"hidemenu":"0","disable_jevix":false,"process_tags":false},"ratings":{"ticket":"10","comment":"1","view":"0.1","vote_ticket":"1","vote_comment":"0.2","star_ticket":"3","star_comment":"0.6"}}',
     'comments' => 0,
-    'views' => 0,
+    'views' => 2,
     'votes' => 0,
-    'tickets' => 4,
+    'tickets' => 3,
     '_content' => '<!DOCTYPE html>
 <html>
     <head>
@@ -99,7 +99,7 @@
         &tpl=`eventsListItem`
         &tplWrapper=`eventsListOuter`
         &includeContent=`1`
-        &includeTVs=`img,date`
+        &includeTVs=`img,date,event_type`
         &processTVs=`1`
     ]]
     
@@ -191,7 +191,7 @@
         &tpl=`eventsListItem`
         &tplWrapper=`eventsListOuter`
         &includeContent=`1`
-        &includeTVs=`img,date`
+        &includeTVs=`img,date,event_type`
         &processTVs=`1`
     ]]
     
@@ -204,35 +204,104 @@
         <script src="/assets/design/js/custom.js" type="text/javascript"></script>
     </body>
 </html>',
-    '[[getTickets?tpl=`eventsListItem`&limit=`10`&offset=`0`&depth=`10`&parents=``&resources=``&sortby=`createdon`&sortdir=`DESC`&includeContent=`1`&toPlaceholder=``&includeTVs=`img,date`&where=``&tvPrefix=``&outputSeparator=`
-`&showLog=``&fastMode=``&showUnpublished=``&showDeleted=``&showHidden=`1`&user=``&tplWrapper=`eventsListOuter`&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&totalVar=`page.total`&pageLimit=`5`&element=`getTickets`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&processTVs=`1`&request=`98fb7142710e8c1ff2628fe2d12100fd`&setTotal=`1`]]' => '<div class="container">
-    <div class="row">
+    '[[getTickets?tpl=`eventsListItem`&limit=`10`&offset=`0`&depth=`10`&parents=``&resources=``&sortby=`createdon`&sortdir=`DESC`&includeContent=`1`&toPlaceholder=``&includeTVs=`img,date,event_type`&where=``&tvPrefix=``&outputSeparator=`
+`&showLog=``&fastMode=``&showUnpublished=``&showDeleted=``&showHidden=`1`&user=``&tplWrapper=`eventsListOuter`&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&totalVar=`page.total`&pageLimit=`5`&element=`getTickets`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&processTVs=`1`&request=`6d71d378140a4fccd61c4907999d0728`&setTotal=`1`]]' => '<div class="container">
+	<div class="row flex">
+    	<div class="col s1 valign-wrapper">
+			<ul id="slide-out" class="sidenav">
+				<li>
+					<ul class="collapsible">
+						<li>
+							<div class="collapsible-header">
+								<i class="material-icons">filter_list</i>Фильтр
+							</div>
+							<div class="collapsible-body">
+								<form action="#">
+								    <p>
+								      <label>
+								        <input id="all" name="group1" type="radio" checked />
+								        <span>ВСЕ</span>
+								      </label>
+								    </p>
+								    <p>
+								      <label>
+								        <input id="cinema" name="group1" type="radio" />
+								        <span>КИНО</span>
+								      </label>
+								    </p>
+								    <p>
+								      <label>
+								        <input name="theatre" type="radio" />
+								        <span>ТЕАТР</span>
+								      </label>
+								    </p>
+								    <p>
+								      <label>
+								        <input  id="clubs" name="group1" type="radio" />
+								        <span>КЛУБЫ И КОНЦЕРТЫ</span>
+								      </label>
+								    </p>
+								    <p>
+								      <label>
+								        <input  id="shows" name="group1" type="radio" />
+								        <span>ВЫСТАВКИ</span>
+								      </label>
+								    </p>
+								    <p>
+								      <label>
+								        <input  id="business" name="group1" type="radio" />
+								        <span>БИЗНЕС</span>
+								      </label>
+								    </p>
+								    <p>
+								      <label>
+								        <input  id="sport" name="group1" type="radio" checked />
+								        <span>СПОРТ</span>
+								      </label>
+								    </p>
+								    <p>
+								      <label>
+								        <input  id="free" name="group1" type="radio" checked />
+								        <span>FREE</span>
+								      </label>
+								    </p>
+								</form>
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i
+				class="material-icons" style="pointer-events: none">settings</i></a>
+			</div>
+	</div>
+    <div class="row flex">
     	<div class="col s12 m6 l4 xl3">
-    <div class="card">
+    <div class="card light-green lighten-3">
         <div class="card-image">
-          <img src="/assets/components/phpthumbof/cache/medal-ernoe-iskusstvo.d9ffc2ce066f23b69f2b31c839306ac12.jpg">
+          <img src="/assets/components/phpthumbof/cache/ekzoticheskie-zhivotnye.d9ffc2ce066f23b69f2b31c839306ac12.jpg">
           <div class="card-title">
-          	<div>Медальерное искусство</div>
-          	<div id="date">03.05.2018</div>
+          	<div>Экзотические животные</div>
+          	<div id="date">14.05.2018</div>
           </div>
         </div>
         <div class="card-content">
-          <p>Около 700 экспонатов содержится в фонде музея медальерного&#8230;</p>
+          <p>Более 50-ти видов животных с пяти континентов мира.&#8230;</p>
         </div>
         <div class="card-action">
-          <a href="events/75-medal-ernoe-iskusstvo">This is a link</a>
+          <a href="events/78-ekzoticheskie-zhivotnye">Подробнее...</a>
         </div>
       </div>
 </div>
 <!-- <div class="tickets-row">
-    <h3 class="title"><a href="events/75-medal-ernoe-iskusstvo">Медальерное искусство</a></h3>
+    <h3 class="title"><a href="events/78-ekzoticheskie-zhivotnye">Экзотические животные</a></h3>
 	<div class="content">
-		Could not load snippet Jevix<br/>
-		<a href="events/75-medal-ernoe-iskusstvo#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
+		Более 50-ти видов животных с пяти континентов мира. От насекомых до птиц и млекопитающих.Стоимость входных билетов:взрослый -30 грндетский - 20грн (до 10 лет)дети до 3х лет бесплатноЗа отдельную плату Вы можете:- сфотографироваться с животными и снять их на видеокамеру- покормить животных- погладить животныхДополнительная информация по телефонам: 097-557-28-18095-115-13-35<br/>
+		<a href="events/78-ekzoticheskie-zhivotnye#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
 	</div>
-	<div class="ticket-meta row" data-id="75">
+	<div class="ticket-meta row" data-id="78">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 1 минута назад
+			<i class="glyphicon glyphicon-calendar"></i> 2 часа назад
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
@@ -240,7 +309,7 @@
 		<span class="col-md-3">
 			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
 			&nbsp;&nbsp;
-			<i class="glyphicon glyphicon-eye-open"></i> 0
+			<i class="glyphicon glyphicon-eye-open"></i> 1
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-comment"></i> 0  
 		</span>
@@ -252,31 +321,31 @@
 	</div>
 </div> -->
 <div class="col s12 m6 l4 xl3">
-    <div class="card">
+    <div class="card light-green lighten-3">
         <div class="card-image">
-          <img src="/assets/components/phpthumbof/cache/kraevedcheskie-vystavki.d9ffc2ce066f23b69f2b31c839306ac12.jpg">
+          <img src="/assets/components/phpthumbof/cache/morskaya-flora-i-fauna.d9ffc2ce066f23b69f2b31c839306ac12.jpg">
           <div class="card-title">
-          	<div>Краеведческие выставки</div>
-          	<div id="date">03.05.2018</div>
+          	<div>Морская флора и фауна</div>
+          	<div id="date">14.05.2018</div>
           </div>
         </div>
         <div class="card-content">
-          <p>Работа постоянных экспозиций музея:- Природа Донецкого&#8230;</p>
+          <p>В пяти залах Азовского морского музея имени В. А. Павлия&#8230;</p>
         </div>
         <div class="card-action">
-          <a href="events/76-kraevedcheskie-vystavki">This is a link</a>
+          <a href="events/79-morskaya-flora-i-fauna">Подробнее...</a>
         </div>
       </div>
 </div>
 <!-- <div class="tickets-row">
-    <h3 class="title"><a href="events/76-kraevedcheskie-vystavki">Краеведческие выставки</a></h3>
+    <h3 class="title"><a href="events/79-morskaya-flora-i-fauna">Морская флора и фауна</a></h3>
 	<div class="content">
-		Could not load snippet Jevix<br/>
-		<a href="events/76-kraevedcheskie-vystavki#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
+		В пяти залах Азовского морского музея имени В. А. Павлия Мариуполя собраны экспонаты и материалы, охватывающие эпоху начиная со времен Петра Первого, закладки им на Азовье города Таганрога в качестве гавани будущего флота до Первой мировой войны, Великой Отечественной, последующих мирных десятилетий развития Азовского бассейна.Экспозиция «Морская флора и фауна»: крабы – из Индийского океана, кораллы – из Красного моря; рыба-меч, рыба-пила. Живописный зал – выставка морских сувениров из Африки, порта Дакар. Ценные морские инструменты, аппараты, навигационные приборы, множество других судовых принадлежностей. Ряд художественных картин. Экспонаты одного из залов посвящены пятидесяти шести Героям Советского Союза, жизнь которых была связана с Мариуполем: адмиралу Лунину, полярному исследователю Седову, географу и исследователю Арктики Папанину и другим.Выставка с 10:00 до 17:00Перерыв с 12:00 до 13:00Вход на выставку бесплатный.Заказ экскурсии (097) 674-41-74.<br/>
+		<a href="events/79-morskaya-flora-i-fauna#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
 	</div>
-	<div class="ticket-meta row" data-id="76">
+	<div class="ticket-meta row" data-id="79">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 1 минута назад
+			<i class="glyphicon glyphicon-calendar"></i> 2 часа назад
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
@@ -284,7 +353,7 @@
 		<span class="col-md-3">
 			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
 			&nbsp;&nbsp;
-			<i class="glyphicon glyphicon-eye-open"></i> 0
+			<i class="glyphicon glyphicon-eye-open"></i> 1
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-comment"></i> 0  
 		</span>
@@ -296,75 +365,31 @@
 	</div>
 </div> -->
 <div class="col s12 m6 l4 xl3">
-    <div class="card">
+    <div class="card light-green lighten-3">
         <div class="card-image">
-          <img src="/assets/components/phpthumbof/cache/Desert.d9ffc2ce066f23b69f2b31c839306ac12.jpg">
+          <img src="/assets/components/phpthumbof/cache/derevyannaya-skul-ptura.d9ffc2ce066f23b69f2b31c839306ac12.jpg">
           <div class="card-title">
-          	<div>Событие 2</div>
-          	<div id="date">02.05.2018</div>
+          	<div>Деревянная скульптура</div>
+          	<div id="date">14.05.2018</div>
           </div>
         </div>
         <div class="card-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing&#8230;</p>
+          <p>В галерее деревянной скульптуры мариупольского умельца&#8230;</p>
         </div>
         <div class="card-action">
-          <a href="events/4-событие-2">This is a link</a>
+          <a href="events/80-derevyannaya-skul-ptura">Подробнее...</a>
         </div>
       </div>
 </div>
 <!-- <div class="tickets-row">
-    <h3 class="title"><a href="events/4-событие-2">Событие 2</a></h3>
+    <h3 class="title"><a href="events/80-derevyannaya-skul-ptura">Деревянная скульптура</a></h3>
 	<div class="content">
-		Could not load snippet Jevix<br/>
-		<a href="events/4-событие-2#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
+		В галерее деревянной скульптуры мариупольского умельца Георгия Короткова посетители могут увидеть 65 работ талантливого мастера, выполненных из 65 цельных кусков дерева. В частности, представляют интерес барельефы на исторические темы – здесь можно увидеть сцены из Куликовской битвы, Тайную вечерю, а также работу «Великий путь греков в Приазовье», принесшую автору медаль Митрополита Игнатия и почетную грамоту приазовских греков.Экскурсии проводятся по предварительной записи (за 1-2 дня) по тел. 050-534-31-24 или 096-027-38-05Формат: групповая экскурсия для 8-10 человек.Стоимость билета:-взрослый 25 гривен-льготный (пенсионеры, школьники, студенты) 15 гривен.<br/>
+		<a href="events/80-derevyannaya-skul-ptura#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
 	</div>
-	<div class="ticket-meta row" data-id="4">
+	<div class="ticket-meta row" data-id="80">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 17 апреля 2018, 11:43
-			&nbsp;&nbsp;
-			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
-		</span>
-		<span class="col-md-2"><a href="events"><i class="glyphicon glyphicon-folder-open"></i> События</a></span>
-		<span class="col-md-3">
-			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
-			&nbsp;&nbsp;
-			<i class="glyphicon glyphicon-eye-open"></i> 0
-			&nbsp;&nbsp;
-			<i class="glyphicon glyphicon-comment"></i> 0  
-		</span>
-		<span class="col-md-2 pull-right ticket-rating inactive">
-			<span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
-			<span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
-			<span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
-		</span>
-	</div>
-</div> -->
-<div class="col s12 m6 l4 xl3">
-    <div class="card">
-        <div class="card-image">
-          <img src="/assets/components/phpthumbof/cache/Chrysanthemum.d9ffc2ce066f23b69f2b31c839306ac12.jpg">
-          <div class="card-title">
-          	<div>Событие 1</div>
-          	<div id="date">30.04.2018</div>
-          </div>
-        </div>
-        <div class="card-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing&#8230;</p>
-        </div>
-        <div class="card-action">
-          <a href="events/3-событие-1">This is a link</a>
-        </div>
-      </div>
-</div>
-<!-- <div class="tickets-row">
-    <h3 class="title"><a href="events/3-событие-1">Событие 1</a></h3>
-	<div class="content">
-		Could not load snippet Jevix<br/>
-		<a href="events/3-событие-1#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
-	</div>
-	<div class="ticket-meta row" data-id="3">
-		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 17 апреля 2018, 11:35
+			<i class="glyphicon glyphicon-calendar"></i> 2 часа назад
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
@@ -562,7 +587,7 @@
         &tpl=`eventsListItem`
         &tplWrapper=`eventsListOuter`
         &includeContent=`1`
-        &includeTVs=`img,date`
+        &includeTVs=`img,date,event_type`
         &processTVs=`1`
     ]]
     [[--!+page.nav]]
@@ -585,7 +610,7 @@
         &tpl=`eventsListItem`
         &tplWrapper=`eventsListOuter`
         &includeContent=`1`
-        &includeTVs=`img,date`
+        &includeTVs=`img,date,event_type`
         &processTVs=`1`
     ]]
     [[--!+page.nav]]
@@ -2999,6 +3024,101 @@ if ($isAjax) {
         return $data[\'output\'];
     }
 }',
+        ),
+        'policies' => 
+        array (
+        ),
+        'source' => 
+        array (
+          'id' => 1,
+          'name' => 'Filesystem',
+          'description' => '',
+          'class_key' => 'sources.modFileMediaSource',
+          'properties' => 
+          array (
+          ),
+          'is_stream' => true,
+        ),
+      ),
+      'cardStyle' => 
+      array (
+        'fields' => 
+        array (
+          'id' => 23,
+          'source' => 1,
+          'property_preprocess' => false,
+          'name' => 'cardStyle',
+          'description' => '',
+          'editor_type' => 0,
+          'category' => 7,
+          'cache_type' => 0,
+          'snippet' => '$style = "";
+if (isset($type)) {
+	switch ($type) {
+		case \'cinema\':
+			$style = "light-blue lighten-3";
+			break;
+		case \'theatre\':
+			$style = "lime lighten-2";
+			break;
+		case \'clubs\':
+			$style = "deep-purple accent-1";
+			break;
+		case \'shows\':
+			$style = "light-green lighten-3";
+			break;
+		case \'business\':
+			$style = "pink accent-1";
+			break;
+		case \'sport\':
+			$style = "indigo lighten-1";
+			break;
+		case \'free\':
+			$style = "purple accent-2";
+			break;
+		default:
+			$style = "";
+			break;
+	}
+}
+return $style;',
+          'locked' => false,
+          'properties' => 
+          array (
+          ),
+          'moduleguid' => '',
+          'static' => true,
+          'static_file' => 'assets/custom/snippets/cardStyle.php',
+          'content' => '$style = "";
+if (isset($type)) {
+	switch ($type) {
+		case \'cinema\':
+			$style = "light-blue lighten-3";
+			break;
+		case \'theatre\':
+			$style = "lime lighten-2";
+			break;
+		case \'clubs\':
+			$style = "deep-purple accent-1";
+			break;
+		case \'shows\':
+			$style = "light-green lighten-3";
+			break;
+		case \'business\':
+			$style = "pink accent-1";
+			break;
+		case \'sport\':
+			$style = "indigo lighten-1";
+			break;
+		case \'free\':
+			$style = "purple accent-2";
+			break;
+		default:
+			$style = "";
+			break;
+	}
+}
+return $style;',
         ),
         'policies' => 
         array (

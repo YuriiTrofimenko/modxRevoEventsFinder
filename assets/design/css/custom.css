@@ -95,6 +95,12 @@ p {
   display: block;
 }
 
+/*Flex columns height*/
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /** Footer **/
 
 footer.page-footer {

@@ -1,5 +1,5 @@
 <div class="col s12 m6 l4 xl3">
-    <div class="card">
+    <div class="card [[!cardStyle? &type=[[+event_type]]]]">
         <div class="card-image">
           <img src="[[+img:phpthumbof=`w=300&h=300&zc=1`]]">
           <div class="card-title">
@@ -11,7 +11,7 @@
           <p>[[+content:ellipsis=`50`]]</p>
         </div>
         <div class="card-action">
-          <a href="[[~[[+id]]]]">This is a link</a>
+          <a href="[[~[[+id]]]]">Подробнее...</a>
         </div>
       </div>
 </div>

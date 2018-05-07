@@ -21,6 +21,7 @@ $newTicket = [
 	, 'content' => null
 	, 'date' => $date
 	, 'img' => null
+	, 'type' => null
 ];
 
 $i = 0;
@@ -35,6 +36,35 @@ foreach ($hentry as $el) {
 	if (!empty($url)) {
 		
 		//echo $url;
+		$typeClass = $elem_pq->attr('class');
+
+		switch ($typeClass) {
+			case 'b-card c-cinema':
+				$newTicket['type'] = 'cinema';
+				break;
+			case 'b-card c-theatre':
+				$newTicket['type'] = 'theatre';
+				break;
+			case 'b-card c-clubs':
+				$newTicket['type'] = 'clubs';
+				break;
+			case 'b-card c-shows':
+				$newTicket['type'] = 'shows';
+				break;
+			case 'b-card c-business':
+				$newTicket['type'] = 'business';
+				break;
+			case 'b-card c-sport':
+				$newTicket['type'] = 'sport';
+				break;
+			case 'b-card c-free':
+				$newTicket['type'] = 'free';
+				break;
+			default:
+				$newTicket['type'] = 'unknown';
+				break;
+		}
+
 		$event = file_get_contents($url);
 		$eventDocument = phpQuery::newDocument($event);
 

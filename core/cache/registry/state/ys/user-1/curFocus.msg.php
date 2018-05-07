@@ -1,2 +1,2 @@
 <?php
-return 'modx-ticket-published';
+return 'modx-ticket-disable_jevix';

@@ -69,14 +69,16 @@ function createTicket($_parentId, $_newTicket){
 		//echo $dir . DIRECTORY_SEPARATOR . $name . '<br>';
 
       	$ticket->setTVValue('img', "assets/uploads/".$name);
-
+      	$ticket->setTVValue('event_type', $_newTicket['type']);
    	}
     catch (PDOException $e) {
       echo 'error occurred! ' . $e->getMessage() . '<br>';
       $modx->log(xPDO::LOG_LEVEL_ERROR, 'Произошла ошибка при сохранении ТВ: '.$e->getMessage());
     }
 	
-	echo $ticket->getTVValue('date').'<br>'.$_newTicket['date'].'<br>';
-	echo $ticket->getTVValue('img').'<br>'.$_newTicket['img'].'<br>';
-	echo $ticket->get('alias').'<br>';
+	//echo $ticket->getTVValue('date').'<br>'.$_newTicket['date'].'<br>';
+	//echo $ticket->getTVValue('img').'<br>'.$_newTicket['img'].'<br>';
+	//echo $ticket->get('alias').'<br>';
+    //echo "Test<br>";
+	//echo $_newTicket['pagetitle']." ".$_newTicket['type']."<br>";
 }

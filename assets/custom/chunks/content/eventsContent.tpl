@@ -10,7 +10,7 @@
         &tpl=`eventsListItem`
         &tplWrapper=`eventsListOuter`
         &includeContent=`1`
-        &includeTVs=`img,date`
+        &includeTVs=`img,date,event_type`
         &processTVs=`1`
     ]]
     [[--!+page.nav]]
