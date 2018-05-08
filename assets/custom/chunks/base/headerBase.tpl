@@ -1,7 +1,12 @@
-<nav class="white" role="navigation">
+<nav class="white">
     <div class="nav-wrapper container">
         <a class="brand-logo" href="#" id="logo-container">
             Поиск событий
+        </a>
+        <a class="sidenav-trigger" data-target="nav-mobile" href="#">
+            <i class="material-icons">
+                menu
+            </i>
         </a>
         [[pdoMenu?
             &parents=`0`
@@ -15,10 +20,5 @@
             &tpl=`menuItem`
             &tplOuter=`menuOuterMobile`
         ]]
-        <a class="button-collapse" data-activates="nav-mobile" href="#">
-            <i class="material-icons">
-                menu
-            </i>
-        </a>
     </div>
 </nav>

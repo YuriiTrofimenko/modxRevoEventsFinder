@@ -4,8 +4,8 @@
   	$('.sidenav').sidenav();
 	$('.collapsible').collapsible();
 
-    $('.button-collapse').sideNav();
-    console.log($('.button-collapse'));
+    $('.button-collapse').sidenav();
+    //console.log($('.button-collapse'));
 
     //$('.image-link').magnificPopup({type:'image'});
   //}); // end of document ready

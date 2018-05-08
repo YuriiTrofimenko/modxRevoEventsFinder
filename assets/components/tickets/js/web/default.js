@@ -140,7 +140,7 @@ var Tickets = {
 
 			$.jGrowl.defaults.closerTemplate = '<div>[ '+TicketsConfig.close_all_message+' ]</div>';
 
-			var count = $('.ticket-comment').size();
+			var count = $('.ticket-comment').length;
 			$('#comment-total, .ticket-comments-count').text(count);
 
 			$("#ticketForm.create").sisyphus({
@@ -363,7 +363,7 @@ var Tickets = {
 						Tickets.comment.insert(response.data.comments[k], true);
 					}
 				}
-				var count = $('.ticket-comment').size();
+				var count = $('.ticket-comment').length;
 				$('#comment-total, .ticket-comments-count').text(count);
 
 				Tickets.tpanel.stop();
@@ -765,7 +765,7 @@ Tickets.tpanel = {
 	}
 
 	,stop: function() {
-		var count = $('.' + this.class_new).size();
+		var count = $('.' + this.class_new).length;
 		if (count > 0) {
 			this.new_comments.text(count).show();
 		}

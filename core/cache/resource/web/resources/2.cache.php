@@ -69,22 +69,22 @@
         </link>
     </head>
     <body>
-<nav class="white" role="navigation">
+<nav class="white">
     <div class="nav-wrapper container">
         <a class="brand-logo" href="#" id="logo-container">
             Поиск событий
         </a>
-        <ul class="right hide-on-med-and-down">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
-</ul>
-        <ul id="nav-mobile" class="side-nav">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
-</ul>
-        <a class="button-collapse" data-activates="nav-mobile" href="#">
+        <a class="sidenav-trigger" data-target="nav-mobile" href="#">
             <i class="material-icons">
                 menu
             </i>
         </a>
+        <ul class="right hide-on-med-and-down">
+  <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
+</ul>
+        <ul id="nav-mobile" class="sidenav">
+  <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
+</ul>
     </div>
 </nav>
 <div class="container">
@@ -158,25 +158,25 @@
             &level=`1`
             &tpl=`menuItem`
             &tplOuter=`menuOuterMobile`
-        ]]' => '<ul id="nav-mobile" class="side-nav">
+        ]]' => '<ul id="nav-mobile" class="sidenav">
   <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
 </ul>',
-    '[[$headerBase]]' => '<nav class="white" role="navigation">
+    '[[$headerBase]]' => '<nav class="white">
     <div class="nav-wrapper container">
         <a class="brand-logo" href="#" id="logo-container">
             Поиск событий
         </a>
-        <ul class="right hide-on-med-and-down">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
-</ul>
-        <ul id="nav-mobile" class="side-nav">
-  <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
-</ul>
-        <a class="button-collapse" data-activates="nav-mobile" href="#">
+        <a class="sidenav-trigger" data-target="nav-mobile" href="#">
             <i class="material-icons">
                 menu
             </i>
         </a>
+        <ul class="right hide-on-med-and-down">
+  <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
+</ul>
+        <ul id="nav-mobile" class="sidenav">
+  <li  class="first"><a href="/" >Главная</a></li><li  class="active"><a href="events" >События</a></li><li  class="last"><a href="test" >Test</a></li>
+</ul>
     </div>
 </nav>',
     '[[$eventsContent]]' => '<div class="container">
@@ -205,7 +205,7 @@
     </body>
 </html>',
     '[[getTickets?tpl=`eventsListItem`&limit=`10`&offset=`0`&depth=`10`&parents=``&resources=``&sortby=`createdon`&sortdir=`DESC`&includeContent=`1`&toPlaceholder=``&includeTVs=`img,date,event_type`&where=``&tvPrefix=``&outputSeparator=`
-`&showLog=``&fastMode=``&showUnpublished=``&showDeleted=``&showHidden=`1`&user=``&tplWrapper=`eventsListOuter`&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&totalVar=`page.total`&pageLimit=`5`&element=`getTickets`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&processTVs=`1`&request=`6d71d378140a4fccd61c4907999d0728`&setTotal=`1`]]' => '<div class="container">
+`&showLog=``&fastMode=``&showUnpublished=``&showDeleted=``&showHidden=`1`&user=``&tplWrapper=`eventsListOuter`&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&totalVar=`page.total`&pageLimit=`5`&element=`getTickets`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&processTVs=`1`&request=`5b2d754919258b61a40630f559a28bd2`&setTotal=`1`]]' => '<div class="container">
 	<div class="row flex">
     	<div class="col s1 valign-wrapper">
 			<ul id="slide-out" class="sidenav">
@@ -301,13 +301,13 @@
 	</div>
 	<div class="ticket-meta row" data-id="78">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 2 часа назад
+			<i class="glyphicon glyphicon-calendar"></i> Вчера в 10:38
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
 		<span class="col-md-2"><a href="events"><i class="glyphicon glyphicon-folder-open"></i> События</a></span>
 		<span class="col-md-3">
-			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
+			<span class="ticket-star"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-eye-open"></i> 1
 			&nbsp;&nbsp;
@@ -345,13 +345,13 @@
 	</div>
 	<div class="ticket-meta row" data-id="79">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 2 часа назад
+			<i class="glyphicon glyphicon-calendar"></i> Вчера в 10:38
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
 		<span class="col-md-2"><a href="events"><i class="glyphicon glyphicon-folder-open"></i> События</a></span>
 		<span class="col-md-3">
-			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
+			<span class="ticket-star"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-eye-open"></i> 1
 			&nbsp;&nbsp;
@@ -389,13 +389,13 @@
 	</div>
 	<div class="ticket-meta row" data-id="80">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 2 часа назад
+			<i class="glyphicon glyphicon-calendar"></i> Вчера в 10:38
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
 		<span class="col-md-2"><a href="events"><i class="glyphicon glyphicon-folder-open"></i> События</a></span>
 		<span class="col-md-3">
-			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
+			<span class="ticket-star"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-eye-open"></i> 0
 			&nbsp;&nbsp;
@@ -493,10 +493,15 @@
           'editor_type' => 0,
           'category' => 2,
           'cache_type' => 0,
-          'snippet' => '<nav class="white" role="navigation">
+          'snippet' => '<nav class="white">
     <div class="nav-wrapper container">
         <a class="brand-logo" href="#" id="logo-container">
             Поиск событий
+        </a>
+        <a class="sidenav-trigger" data-target="nav-mobile" href="#">
+            <i class="material-icons">
+                menu
+            </i>
         </a>
         [[pdoMenu?
             &parents=`0`
@@ -510,11 +515,6 @@
             &tpl=`menuItem`
             &tplOuter=`menuOuterMobile`
         ]]
-        <a class="button-collapse" data-activates="nav-mobile" href="#">
-            <i class="material-icons">
-                menu
-            </i>
-        </a>
     </div>
 </nav>',
           'locked' => false,
@@ -523,10 +523,15 @@
           ),
           'static' => true,
           'static_file' => 'assets/custom/chunks/base/headerBase.tpl',
-          'content' => '<nav class="white" role="navigation">
+          'content' => '<nav class="white">
     <div class="nav-wrapper container">
         <a class="brand-logo" href="#" id="logo-container">
             Поиск событий
+        </a>
+        <a class="sidenav-trigger" data-target="nav-mobile" href="#">
+            <i class="material-icons">
+                menu
+            </i>
         </a>
         [[pdoMenu?
             &parents=`0`
@@ -540,11 +545,6 @@
             &tpl=`menuItem`
             &tplOuter=`menuOuterMobile`
         ]]
-        <a class="button-collapse" data-activates="nav-mobile" href="#">
-            <i class="material-icons">
-                menu
-            </i>
-        </a>
     </div>
 </nav>',
         ),

@@ -1,3 +1,3 @@
-<ul id="nav-mobile" class="side-nav">
+<ul id="nav-mobile" class="sidenav">
   [[+wrapper]]
 </ul>
