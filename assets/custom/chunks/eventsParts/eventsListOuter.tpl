@@ -1,5 +1,5 @@
 <div class="container">
-	<div class="row flex">
+	<div class="row">
     	<div class="col s1 valign-wrapper">
 			<ul id="slide-out" class="sidenav">
 				<li>
@@ -9,7 +9,7 @@
 								<i class="material-icons">filter_list</i>Фильтр
 							</div>
 							<div class="collapsible-body">
-								<form action="#">
+								<form id="event-types-filter" action="#">
 								    <p>
 								      <label>
 								        <input id="all" name="group1" type="radio" checked />
@@ -48,13 +48,13 @@
 								    </p>
 								    <p>
 								      <label>
-								        <input  id="sport" name="group1" type="radio" checked />
+								        <input  id="sport" name="group1" type="radio" />
 								        <span>СПОРТ</span>
 								      </label>
 								    </p>
 								    <p>
 								      <label>
-								        <input  id="free" name="group1" type="radio" checked />
+								        <input  id="free" name="group1" type="radio" />
 								        <span>FREE</span>
 								      </label>
 								    </p>
@@ -68,7 +68,7 @@
 				class="material-icons" style="pointer-events: none">settings</i></a>
 			</div>
 	</div>
-    <div class="row flex">
+    <div class="row">
     	[[+output]]
 	</div>
 </div>

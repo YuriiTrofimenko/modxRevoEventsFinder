@@ -8,10 +8,12 @@
     'events' => 2,
     'test' => 5,
     'api' => 81,
+    'events-ajax' => 82,
     'events/3-событие-1' => 3,
     'events/78-ekzoticheskie-zhivotnye' => 78,
     'events/79-morskaya-flora-i-fauna' => 79,
     'events/80-derevyannaya-skul-ptura' => 80,
+    'events/83-otkrytaya-trenirovka' => 83,
     'events/4-событие-2' => 4,
   ),
   'resourceMap' => 
@@ -22,6 +24,7 @@
       1 => 2,
       2 => 5,
       3 => 81,
+      4 => 82,
     ),
     2 => 
     array (
@@ -29,7 +32,8 @@
       1 => 78,
       2 => 79,
       3 => 80,
-      4 => 4,
+      4 => 83,
+      5 => 4,
     ),
   ),
   'webLinkMap' => 

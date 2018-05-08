@@ -1,14 +1,27 @@
 (function($){
-  //$(function(){
 
   	$('.sidenav').sidenav();
 	$('.collapsible').collapsible();
 
     $('.button-collapse').sidenav();
-    //console.log($('.button-collapse'));
+    
+    $('form#event-types-filter input').change(function() {
 
-    //$('.image-link').magnificPopup({type:'image'});
-  //}); // end of document ready
-})(jQuery); // end of jQuery name space
-
-//console.log('sfdsf');
+	    if(this.checked) {
+	        
+	    	$.ajax({
+	            url: "/events-ajax",
+	            type: "POST",
+	            data: { 
+	                'type': this.id
+	                , 'date': ''
+	            },
+	            cache : false
+	        }).done(function(data) {
+	            
+	            //помещаем на веб-страницу
+	            $('#events-container').html(data);
+	        });
+	    }
+	});
+})(jQuery);
