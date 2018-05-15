@@ -67,6 +67,12 @@ p {
   font-size: 14px
 }
 
+/** Logo **/
+nav .brand-logo {
+
+  font-size: 1.6rem !important;
+}
+
 /** LIGHTBOX MARKUP **/
 
 .lightbox {
@@ -103,6 +109,15 @@ p {
 .flex {
   display: flex;
   flex-wrap: wrap;
+}
+
+/** Preloader **/
+.preloader-wrapper {
+    /*display: none;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
 }
 
 /** Footer **/

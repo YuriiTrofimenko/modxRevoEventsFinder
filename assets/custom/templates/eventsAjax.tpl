@@ -8,6 +8,3 @@
     &processTVs=`1`
     &tvFilters=`[[!eventsFilter]]`
 ]]
-<div>
-	[[!eventsFilter]]
-</div>>
