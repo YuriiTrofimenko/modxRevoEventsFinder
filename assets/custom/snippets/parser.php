@@ -22,6 +22,7 @@ $newTicket = [
 	, 'date' => $date
 	, 'img' => null
 	, 'type' => null
+	, 'age_limit' => null
 ];
 
 $i = 0;
@@ -68,8 +69,14 @@ foreach ($hentry as $el) {
 		$event = file_get_contents($url);
 		$eventDocument = phpQuery::newDocument($event);
 
+		//Parse event's title
 		$eventHeader = $eventDocument->find('div.b-card-full__header h1')->text();
 		$newTicket['pagetitle'] = $eventHeader;
+
+		//Parse event's age limit
+		$eventAgeLimit = $eventDocument->find('div.b-card-full__age_limit')->text();
+		$newTicket['age_limit'] = $eventAgeLimit;
+
 		//String tabTitleElementString = documentEventDetails.select("a.m-session").text();
 		$eventIsFilm = $eventDocument->find('a.m-session')->text();
 		//echo $eventIsFilm;

@@ -27,7 +27,7 @@
             &tpl=`eventsListItem`
             &tplWrapper=`eventsListOuter`
             &includeContent=`1`
-            &includeTVs=`img,date,event_type`
+            &includeTVs=`img,date,event_type,age_limit`
             &processTVs=`1`
             &tvFilters=`[[!eventsFilter]]`
         ]]

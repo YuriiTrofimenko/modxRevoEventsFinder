@@ -1,2 +1,2 @@
 <?php
-return 'ta';
+return 'modx-ticket-disable_jevix';

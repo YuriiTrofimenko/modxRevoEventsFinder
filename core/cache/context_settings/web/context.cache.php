@@ -14,6 +14,9 @@
     'events/79-morskaya-flora-i-fauna' => 79,
     'events/80-derevyannaya-skul-ptura' => 80,
     'events/83-otkrytaya-trenirovka' => 83,
+    'events/85-narodnyy-byt' => 85,
+    'events/87-yakbi-zustrilisya-mi-znovu' => 87,
+    'events/88-kraevedcheskie-vystavki' => 88,
     'events/4-событие-2' => 4,
   ),
   'resourceMap' => 
@@ -33,7 +36,10 @@
       2 => 79,
       3 => 80,
       4 => 83,
-      5 => 4,
+      5 => 85,
+      6 => 87,
+      7 => 88,
+      8 => 4,
     ),
   ),
   'webLinkMap' => 

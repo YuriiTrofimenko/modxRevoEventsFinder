@@ -4,7 +4,7 @@
 </a>
 <div class="container">
 	<h4>
-        [[*pagetitle]]
+        [[*pagetitle]] ([[*age_limit]])
     </h4>
     <div class="row">
     	<div class="col s4 m4 l4 xl4">

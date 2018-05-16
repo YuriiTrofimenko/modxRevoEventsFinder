@@ -3,7 +3,7 @@
         <div class="card-image">
           <img src="[[+img:phpthumbof=`w=300&h=300&zc=1`]]">
           <div class="card-title">
-          	<div>[[+pagetitle]]</div>
+          	<div>[[+pagetitle]] ([[+age_limit]])</div>
           	<div id="date">[[+date:strtotime:date=`%d.%m.%Y`]]</div>
           </div>
         </div>

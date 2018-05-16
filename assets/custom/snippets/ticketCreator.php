@@ -70,6 +70,7 @@ function createTicket($_parentId, $_newTicket){
 
       	$ticket->setTVValue('img', "assets/uploads/".$name);
       	$ticket->setTVValue('event_type', $_newTicket['type']);
+      	$ticket->setTVValue('age_limit', $_newTicket['age_limit']);
    	}
     catch (PDOException $e) {
       echo 'error occurred! ' . $e->getMessage() . '<br>';
