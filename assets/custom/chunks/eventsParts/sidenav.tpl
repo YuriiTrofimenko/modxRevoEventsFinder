@@ -21,7 +21,7 @@
                       </p>
                       <p>
                         <label>
-                          <input name="theatre" type="radio" />
+                          <input id="theatre" name="group1" type="radio" />
                           <span>ТЕАТР</span>
                         </label>
                       </p>

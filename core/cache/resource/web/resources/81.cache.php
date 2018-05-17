@@ -2,13 +2,13 @@
   'resourceClass' => 'modDocument',
   'resource' => 
   array (
-    'id' => 82,
+    'id' => 81,
     'type' => 'document',
     'contentType' => 'text/html',
-    'pagetitle' => 'eventsAjax',
+    'pagetitle' => 'api',
     'longtitle' => '',
     'description' => '',
-    'alias' => 'events-ajax',
+    'alias' => 'api',
     'link_attributes' => '',
     'published' => 1,
     'pub_date' => 0,
@@ -16,20 +16,23 @@
     'parent' => 0,
     'isfolder' => 0,
     'introtext' => '',
-    'content' => '',
+    'content' => '[[--!cardStyle? &type=`shows`]]
+[[--!eventsFilter]]
+[[--!tvViewer]]
+[[!eventsAjax]]',
     'richtext' => 1,
-    'template' => 5,
-    'menuindex' => 4,
+    'template' => 0,
+    'menuindex' => 3,
     'searchable' => 1,
     'cacheable' => 1,
     'createdby' => 1,
-    'createdon' => 1525768924,
+    'createdon' => 1525680391,
     'editedby' => 1,
-    'editedon' => 1525769015,
+    'editedon' => 1526540779,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
-    'publishedon' => 1525768920,
+    'publishedon' => 1525680360,
     'publishedby' => 1,
     'menutitle' => '',
     'donthit' => 0,
@@ -40,21 +43,15 @@
     'class_key' => 'modDocument',
     'context_key' => 'web',
     'content_type' => 1,
-    'uri' => 'events-ajax',
+    'uri' => 'api',
     'uri_override' => 0,
     'hide_children_in_tree' => 0,
     'show_in_tree' => 1,
     'properties' => NULL,
-    '_content' => '[[!pdoPage?
-	&parents=`2`
-    &element=`getTickets`
-    &tpl=`eventsListItem`
-    &tplWrapper=`eventsListOuter`
-    &includeContent=`1`
-    &includeTVs=`img,date,event_type,age_limit`
-    &processTVs=`1`
-    &tvFilters=`[[!eventsFilter]]`
-]]',
+    '_content' => '
+
+
+[[!eventsAjax]]',
     '_isForward' => false,
   ),
   'contentType' => 
@@ -72,11 +69,11 @@
   ),
   'elementCache' => 
   array (
-    '[[getTickets?tpl=`eventsListItem`&limit=`10`&offset=`0`&depth=`10`&parents=`2`&resources=``&sortby=`createdon`&sortdir=`DESC`&includeContent=`1`&toPlaceholder=``&includeTVs=`img,date,event_type,age_limit`&where=``&tvPrefix=``&outputSeparator=`
-`&showLog=``&fastMode=``&showUnpublished=``&showDeleted=``&showHidden=`1`&user=``&tplWrapper=`eventsListOuter`&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&totalVar=`page.total`&pageLimit=`5`&element=`getTickets`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&processTVs=`1`&tvFilters=`date==2018-05-23 00:00:00`&request=`6724ab125338f7a97a3ee557c2bc7c90`&setTotal=`1`]]' => '<div class="col s12 m6 l4 xl3">
+    '[[getTickets?tpl=`eventsListItem`&limit=`10`&offset=`0`&depth=`10`&parents=`2`&resources=``&sortby=`createdon`&sortdir=`DESC`&includeContent=`1`&toPlaceholder=``&includeTVs=`img,date,event_type,age_limit`&where=`[{\'pagetitle:=:Event 1\'}]`&tvPrefix=``&outputSeparator=`
+`&showLog=``&fastMode=``&showUnpublished=``&showDeleted=``&showHidden=`1`&user=``&tplWrapper=`eventsListOuter`&plPrefix=``&maxLimit=`100`&page=`1`&pageVarKey=`page`&totalVar=`page.total`&pageLimit=`5`&element=`getTickets`&pageNavVar=`page.nav`&pageCountVar=`pageCount`&pageLinkScheme=``&tplPage=`@INLINE <li><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageWrapper=`@INLINE <div class="pagination"><ul class="pagination">[[+first]][[+prev]][[+pages]][[+next]][[+last]]</ul></div>`&tplPageActive=`@INLINE <li class="active"><a href="[[+href]]">[[+pageNo]]</a></li>`&tplPageFirst=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_first]]</a></li>`&tplPageLast=`@INLINE <li class="control"><a href="[[+href]]">[[%pdopage_last]]</a></li>`&tplPagePrev=`@INLINE <li class="control"><a href="[[+href]]">&laquo;</a></li>`&tplPageNext=`@INLINE <li class="control"><a href="[[+href]]">&raquo;</a></li>`&tplPageSkip=`@INLINE <li class="disabled"><span>...</span></li>`&tplPageFirstEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_first]]</span></li>`&tplPageLastEmpty=`@INLINE <li class="disabled"><span>[[%pdopage_last]]</span></li>`&tplPagePrevEmpty=`@INLINE <li class="disabled"><span>&laquo;</span></li>`&tplPageNextEmpty=`@INLINE <li class="disabled"><span>&raquo;</span></li>`&cache=``&cacheTime=`3600`&cacheAnonymous=``&ajax=``&ajaxMode=``&ajaxElemWrapper=`#pdopage`&ajaxElemRows=`#pdopage .rows`&ajaxElemPagination=`#pdopage .pagination`&ajaxElemLink=`#pdopage .pagination a`&ajaxElemMore=`#pdopage .btn-more`&ajaxTplMore=`@INLINE <button class="btn btn-default btn-more">[[%pdopage_more]]</button>`&ajaxHistory=``&setMeta=`1`&strictMode=`1`&processTVs=`1`&request=`394df6293eccdc69f706f79bc97bcc2e`&setTotal=`1`]]' => '<div class="col s12 m6 l4 xl3">
     <div class="card lime lighten-2">
         <div class="card-image">
-          <img src="/assets/components/phpthumbof/cache/yakbi-zustrilisya-mi-znovu.d9ffc2ce066f23b69f2b31c839306ac182.jpg">
+          <img src="/assets/components/phpthumbof/cache/yakbi-zustrilisya-mi-znovu.d9ffc2ce066f23b69f2b31c839306ac181.jpg">
           <div class="card-title">
           	<div>Якби зустрiлися ми знову... (                        16+                    )</div>
           	<div id="date">23.05.2018</div>
@@ -98,7 +95,7 @@
 	</div>
 	<div class="ticket-meta row" data-id="87">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 4 минуты назад
+			<i class="glyphicon glyphicon-calendar"></i> Вчера в 12:11
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
@@ -120,7 +117,7 @@
 <div class="col s12 m6 l4 xl3">
     <div class="card light-green lighten-3">
         <div class="card-image">
-          <img src="/assets/components/phpthumbof/cache/kraevedcheskie-vystavki.d9ffc2ce066f23b69f2b31c839306ac182.jpg">
+          <img src="/assets/components/phpthumbof/cache/kraevedcheskie-vystavki.d9ffc2ce066f23b69f2b31c839306ac181.jpg">
           <div class="card-title">
           	<div>Краеведческие выставки (                        0+                    )</div>
           	<div id="date">23.05.2018</div>
@@ -142,7 +139,7 @@
 	</div>
 	<div class="ticket-meta row" data-id="88">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 4 минуты назад
+			<i class="glyphicon glyphicon-calendar"></i> Вчера в 12:11
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
@@ -164,7 +161,7 @@
 <div class="col s12 m6 l4 xl3">
     <div class="card light-green lighten-3">
         <div class="card-image">
-          <img src="/assets/components/phpthumbof/cache/narodnyy-byt.d9ffc2ce066f23b69f2b31c839306ac182.jpg">
+          <img src="/assets/components/phpthumbof/cache/narodnyy-byt.d9ffc2ce066f23b69f2b31c839306ac181.jpg">
           <div class="card-title">
           	<div>Народный быт (0+)</div>
           	<div id="date">23.05.2018</div>
@@ -186,7 +183,7 @@
 	</div>
 	<div class="ticket-meta row" data-id="85">
 		<span class="col-md-5">
-			<i class="glyphicon glyphicon-calendar"></i> 24 минуты назад
+			<i class="glyphicon glyphicon-calendar"></i> Вчера в 11:51
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
 		</span>
@@ -195,6 +192,182 @@
 			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-eye-open"></i> 1
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-comment"></i> 0  
+		</span>
+		<span class="col-md-2 pull-right ticket-rating inactive">
+			<span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+			<span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+			<span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+		</span>
+	</div>
+</div> -->
+<div class="col s12 m6 l4 xl3">
+    <div class="card indigo lighten-1">
+        <div class="card-image">
+          <img src="/assets/components/phpthumbof/cache/otkrytaya-trenirovka.d9ffc2ce066f23b69f2b31c839306ac181.jpg">
+          <div class="card-title">
+          	<div>Открытая тренировка (0+)</div>
+          	<div id="date">14.05.2018</div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p>Каждый вторник и суббота в 7.00 Открытая тренировка.&#8230;</p>
+        </div>
+        <div class="card-action">
+          <a href="events/83-otkrytaya-trenirovka">Подробнее...</a>
+        </div>
+      </div>
+</div>
+<!-- <div class="tickets-row">
+    <h3 class="title"><a href="events/83-otkrytaya-trenirovka">Открытая тренировка</a></h3>
+	<div class="content">
+		Каждый вторник и суббота в 7.00 Открытая тренировка. Единоборства и Crossfit.Место проведения: Спорт площадка возле водной станции «Маркохим»Подробности по тел. 0985543902<br/>
+		<a href="events/83-otkrytaya-trenirovka#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
+	</div>
+	<div class="ticket-meta row" data-id="83">
+		<span class="col-md-5">
+			<i class="glyphicon glyphicon-calendar"></i> 08 мая 2018, 11:57
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
+		</span>
+		<span class="col-md-2"><a href="events"><i class="glyphicon glyphicon-folder-open"></i> События</a></span>
+		<span class="col-md-3">
+			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-eye-open"></i> 0
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-comment"></i> 0  
+		</span>
+		<span class="col-md-2 pull-right ticket-rating inactive">
+			<span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+			<span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+			<span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+		</span>
+	</div>
+</div> -->
+<div class="col s12 m6 l4 xl3">
+    <div class="card light-green lighten-3">
+        <div class="card-image">
+          <img src="/assets/components/phpthumbof/cache/ekzoticheskie-zhivotnye.d9ffc2ce066f23b69f2b31c839306ac181.jpg">
+          <div class="card-title">
+          	<div>Экзотические животные (0+)</div>
+          	<div id="date">08.05.2018</div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p>Более 50-ти видов животных с пяти континентов мира.&#8230;</p>
+        </div>
+        <div class="card-action">
+          <a href="events/78-ekzoticheskie-zhivotnye">Подробнее...</a>
+        </div>
+      </div>
+</div>
+<!-- <div class="tickets-row">
+    <h3 class="title"><a href="events/78-ekzoticheskie-zhivotnye">Экзотические животные</a></h3>
+	<div class="content">
+		Более 50-ти видов животных с пяти континентов мира. От насекомых до птиц и млекопитающих.Стоимость входных билетов:взрослый -30 грндетский - 20грн (до 10 лет)дети до 3х лет бесплатноЗа отдельную плату Вы можете:- сфотографироваться с животными и снять их на видеокамеру- покормить животных- погладить животныхДополнительная информация по телефонам: 097-557-28-18095-115-13-35<br/>
+		<a href="events/78-ekzoticheskie-zhivotnye#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
+	</div>
+	<div class="ticket-meta row" data-id="78">
+		<span class="col-md-5">
+			<i class="glyphicon glyphicon-calendar"></i> 07 мая 2018, 10:38
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
+		</span>
+		<span class="col-md-2"><a href="events"><i class="glyphicon glyphicon-folder-open"></i> События</a></span>
+		<span class="col-md-3">
+			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-eye-open"></i> 1
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-comment"></i> 0  
+		</span>
+		<span class="col-md-2 pull-right ticket-rating inactive">
+			<span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+			<span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+			<span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+		</span>
+	</div>
+</div> -->
+<div class="col s12 m6 l4 xl3">
+    <div class="card light-green lighten-3">
+        <div class="card-image">
+          <img src="/assets/components/phpthumbof/cache/morskaya-flora-i-fauna.d9ffc2ce066f23b69f2b31c839306ac181.jpg">
+          <div class="card-title">
+          	<div>Морская флора и фауна (0+)</div>
+          	<div id="date">14.05.2018</div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p>В пяти залах Азовского морского музея имени В. А. Павлия&#8230;</p>
+        </div>
+        <div class="card-action">
+          <a href="events/79-morskaya-flora-i-fauna">Подробнее...</a>
+        </div>
+      </div>
+</div>
+<!-- <div class="tickets-row">
+    <h3 class="title"><a href="events/79-morskaya-flora-i-fauna">Морская флора и фауна</a></h3>
+	<div class="content">
+		В пяти залах Азовского морского музея имени В. А. Павлия Мариуполя собраны экспонаты и материалы, охватывающие эпоху начиная со времен Петра Первого, закладки им на Азовье города Таганрога в качестве гавани будущего флота до Первой мировой войны, Великой Отечественной, последующих мирных десятилетий развития Азовского бассейна.Экспозиция «Морская флора и фауна»: крабы – из Индийского океана, кораллы – из Красного моря; рыба-меч, рыба-пила. Живописный зал – выставка морских сувениров из Африки, порта Дакар. Ценные морские инструменты, аппараты, навигационные приборы, множество других судовых принадлежностей. Ряд художественных картин. Экспонаты одного из залов посвящены пятидесяти шести Героям Советского Союза, жизнь которых была связана с Мариуполем: адмиралу Лунину, полярному исследователю Седову, географу и исследователю Арктики Папанину и другим.Выставка с 10:00 до 17:00Перерыв с 12:00 до 13:00Вход на выставку бесплатный.Заказ экскурсии (097) 674-41-74.<br/>
+		<a href="events/79-morskaya-flora-i-fauna#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
+	</div>
+	<div class="ticket-meta row" data-id="79">
+		<span class="col-md-5">
+			<i class="glyphicon glyphicon-calendar"></i> 07 мая 2018, 10:38
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
+		</span>
+		<span class="col-md-2"><a href="events"><i class="glyphicon glyphicon-folder-open"></i> События</a></span>
+		<span class="col-md-3">
+			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-eye-open"></i> 1
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-comment"></i> 0  
+		</span>
+		<span class="col-md-2 pull-right ticket-rating inactive">
+			<span class="vote plus" title="Нравится"><i class="glyphicon glyphicon-arrow-up"></i></span>
+			<span class="rating" title="Всего 0: ↑0 и ↓0">0</span>
+			<span class="vote minus" title="Не нравится"><i class="glyphicon glyphicon-arrow-down"></i></span>
+		</span>
+	</div>
+</div> -->
+<div class="col s12 m6 l4 xl3">
+    <div class="card light-green lighten-3">
+        <div class="card-image">
+          <img src="/assets/components/phpthumbof/cache/derevyannaya-skul-ptura.d9ffc2ce066f23b69f2b31c839306ac181.jpg">
+          <div class="card-title">
+          	<div>Деревянная скульптура (0+)</div>
+          	<div id="date">14.05.2018</div>
+          </div>
+        </div>
+        <div class="card-content">
+          <p>В галерее деревянной скульптуры мариупольского умельца&#8230;</p>
+        </div>
+        <div class="card-action">
+          <a href="events/80-derevyannaya-skul-ptura">Подробнее...</a>
+        </div>
+      </div>
+</div>
+<!-- <div class="tickets-row">
+    <h3 class="title"><a href="events/80-derevyannaya-skul-ptura">Деревянная скульптура</a></h3>
+	<div class="content">
+		Could not load snippet Jevix<br/>
+		<a href="events/80-derevyannaya-skul-ptura#cut" class="btn btn-default ticket-read-more">Читать дальше</a>
+	</div>
+	<div class="ticket-meta row" data-id="80">
+		<span class="col-md-5">
+			<i class="glyphicon glyphicon-calendar"></i> 07 мая 2018, 10:38
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-user"></i> Администратор по умолчанию
+		</span>
+		<span class="col-md-2"><a href="events"><i class="glyphicon glyphicon-folder-open"></i> События</a></span>
+		<span class="col-md-3">
+			<span class="ticket-star active"><i class="glyphicon glyphicon-star unstared star"></i> <span class="ticket-star-count">0</span></span>
+			&nbsp;&nbsp;
+			<i class="glyphicon glyphicon-eye-open"></i> 0
 			&nbsp;&nbsp;
 			<i class="glyphicon glyphicon-comment"></i> 0  
 		</span>
@@ -213,81 +386,113 @@
     ),
     'modSnippet' => 
     array (
-      'eventsFilter' => 
+      'eventsAjax' => 
       array (
         'fields' => 
         array (
-          'id' => 24,
+          'id' => 27,
           'source' => 1,
           'property_preprocess' => false,
-          'name' => 'eventsFilter',
+          'name' => 'eventsAjax',
           'description' => '',
           'editor_type' => 0,
           'category' => 7,
           'cache_type' => 0,
-          'snippet' => '$filter = array();
+          'snippet' => '$output = \'\';
+if(isset($_REQUEST[\'action\'])) {
 
-if(isset($_REQUEST[\'type\'])){
+	switch ($_REQUEST[\'action\']) {
 
-  if($_REQUEST[\'type\'] !== \'\' && $_REQUEST[\'type\'] !== \'all\'){
-    
-    //$filter[] = \'event_type==\'.$_REQUEST[\'type\'].\'%\';
-    $filter[] = \'event_type==\'.$_REQUEST[\'type\'];
-  }
+		case \'fetch-filtered-events\':
+			$output = \'[[$filteredEventsAjax]]\';
+			break;
+
+		case \'fetch-events-by-title\':
+			$title = $_REQUEST[\'title\'];
+			$output =
+				"[[!pdoPage?
+					&parents=`2`
+				    &element=`getTickets`
+				    &tpl=`eventsListItem`
+				    &tplWrapper=`eventsListOuter`
+				    &includeContent=`1`
+				    &includeTVs=`img,date,event_type,age_limit`
+				    &processTVs=`1`
+				    &where=`[{\'pagetitle:=:[$title]\'}]`
+				]]"
+			;
+			break;
+
+		case \'fetch-enents-titles\':
+			require_once(\'/assets/custom/snippets/modxInit.php\');
+			$where = [\'parent\' => \'2\'];
+			$resources = $GLOBALS[\'modx\']->getCollection(\'modResource\', $where);
+			//var_dump($resources);
+			$outputArray = [];
+			foreach ($resources as $doc) {
+			    $outputArray[$doc->get(\'pagetitle\')] = null;
+			}
+			//$output = json_encode($outputArray, JSON_UNESCAPED_UNICODE);
+			$output = json_encode($outputArray);
+			break;
+		
+		default:
+			# code...
+			break;
+	}
 }
-
-$date = date(\'Y-m-d\')." 00:00:00"; //по-умолчанию, ищем актуальные относительно текущай даты
-
-if(isset($_REQUEST[\'date\'])){
-
-  if($_REQUEST[\'date\'] !== \'\'){
-
-    //format
-    //конвертируем формат даты, если он не Y-m-d а, например, d/m/Y
-    $date = DateTime::createFromFormat(\'d-m-Y\', $_REQUEST[\'date\']);
-    //$date = $date->format(\'Y-m-d H:i:s\');
-    $date = $date->format(\'Y-m-d\')." 00:00:00";
-    //$filter[] = \'date<=\'.$date; //ищем события, которые уже начались относительно заданой даты
-  }
-}
-
-$filter[] = \'date==\'.$date;
-return implode(\',\',$filter);',
+return $output;',
           'locked' => false,
           'properties' => 
           array (
           ),
           'moduleguid' => '',
           'static' => true,
-          'static_file' => 'assets/custom/snippets/eventsFilter.php',
-          'content' => '$filter = array();
+          'static_file' => 'assets/custom/snippets/eventsAjax.php',
+          'content' => '$output = \'\';
+if(isset($_REQUEST[\'action\'])) {
 
-if(isset($_REQUEST[\'type\'])){
+	switch ($_REQUEST[\'action\']) {
 
-  if($_REQUEST[\'type\'] !== \'\' && $_REQUEST[\'type\'] !== \'all\'){
-    
-    //$filter[] = \'event_type==\'.$_REQUEST[\'type\'].\'%\';
-    $filter[] = \'event_type==\'.$_REQUEST[\'type\'];
-  }
+		case \'fetch-filtered-events\':
+			$output = \'[[$filteredEventsAjax]]\';
+			break;
+
+		case \'fetch-events-by-title\':
+			$title = $_REQUEST[\'title\'];
+			$output =
+				"[[!pdoPage?
+					&parents=`2`
+				    &element=`getTickets`
+				    &tpl=`eventsListItem`
+				    &tplWrapper=`eventsListOuter`
+				    &includeContent=`1`
+				    &includeTVs=`img,date,event_type,age_limit`
+				    &processTVs=`1`
+				    &where=`[{\'pagetitle:=:[$title]\'}]`
+				]]"
+			;
+			break;
+
+		case \'fetch-enents-titles\':
+			require_once(\'/assets/custom/snippets/modxInit.php\');
+			$where = [\'parent\' => \'2\'];
+			$resources = $GLOBALS[\'modx\']->getCollection(\'modResource\', $where);
+			//var_dump($resources);
+			$outputArray = [];
+			foreach ($resources as $doc) {
+			    $outputArray[$doc->get(\'pagetitle\')] = null;
+			}
+			//$output = json_encode($outputArray, JSON_UNESCAPED_UNICODE);
+			$output = json_encode($outputArray);
+			break;
+		
+		default:
+			# code...
+			break;
+	}
 }
-
-$date = date(\'Y-m-d\')." 00:00:00"; //по-умолчанию, ищем актуальные относительно текущай даты
-
-if(isset($_REQUEST[\'date\'])){
-
-  if($_REQUEST[\'date\'] !== \'\'){
-
-    //format
-    //конвертируем формат даты, если он не Y-m-d а, например, d/m/Y
-    $date = DateTime::createFromFormat(\'d-m-Y\', $_REQUEST[\'date\']);
-    //$date = $date->format(\'Y-m-d H:i:s\');
-    $date = $date->format(\'Y-m-d\')." 00:00:00";
-    //$filter[] = \'date<=\'.$date; //ищем события, которые уже начались относительно заданой даты
-  }
-}
-
-$filter[] = \'date==\'.$date;
-return implode(\',\',$filter);',
+return $output;',
         ),
         'policies' => 
         array (

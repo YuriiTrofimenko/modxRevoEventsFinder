@@ -1,2 +1,2 @@
 <?php
-return 'modx-ticket-disable_jevix';
+return 'modx-resource-pagetitle';

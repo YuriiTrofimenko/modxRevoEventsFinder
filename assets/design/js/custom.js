@@ -1,11 +1,49 @@
-var autocompleteItems =
-	{
-        "Apple": null,
-        "Microsoft": null,
-        "Google": 'https://placehold.it/250x250'
-  	};
-
 (function($){
+
+    var autocompleteItems = {};
+
+    var onAutocompleteCallback = function(){
+
+        $('#events-container').html('<div class="preloader-wrapper big active"> <div class="spinner-layer spinner-green-only"> <div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div> </div> </div> </div>');
+        $.ajax({
+            url: "/events-ajax",
+            type: "POST",
+            data: {
+                //'type': this.id
+                'action': 'fetch-events-by-title'
+                , 'title': $('input#search').val()
+            },
+            cache : false
+        }).done(function(data) {
+            
+            //помещаем на веб-страницу
+            $('#events-container').html(data);
+        });
+    }
+
+    //autocomplete
+    $('input.autocomplete').autocomplete({
+        data: autocompleteItems
+        , onAutocomplete: 
+    });
+
+    var eventsSearchAutocomplete = M.Autocomplete.getInstance($('input.autocomplete'));
+
+    console.dir(eventsSearchAutocomplete);
+
+    $.ajax({
+        url: "/events-ajax",
+        type: "POST",
+        data: {
+            'action': 'fetch-enents-titles'
+        },
+        cache : false
+    }).done(function(newAutocompleteItems) {
+        
+        
+        console.log(newAutocompleteItems);
+        eventsSearchAutocomplete.updateData(JSON.parse(newAutocompleteItems));
+    });
 
 	//Добавляем к стандартному типу Дата функцию коррекции даты по часовому поясу
     Date.prototype.toDateInputValue = (function() {
@@ -25,11 +63,6 @@ var autocompleteItems =
         var reversed = pieces.join('-');
         return reversed;
     }
-
-    //autocomplete
-    $('input.autocomplete').autocomplete({
-      data: autocompleteItems,
-    });
 
 	//активация панели фильтра
   	$('.sidenav').sidenav();
@@ -55,7 +88,8 @@ var autocompleteItems =
             type: "POST",
             data: {
                 //'type': this.id
-                'type': $('form#event-types-filter input[type=radio]:checked').attr('id')
+                'action': 'fetch-filtered-events'
+                , 'type': $('form#event-types-filter input[type=radio]:checked').attr('id')
                 , 'date': $('.datepicker').val()
             },
             cache : false

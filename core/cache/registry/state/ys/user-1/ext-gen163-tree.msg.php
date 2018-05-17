@@ -1,2 +1,2 @@
 <?php
-return '/Filesystem/assets/custom/snippets';
+return '/Filesystem/assets/custom/chunks/eventsParts';
