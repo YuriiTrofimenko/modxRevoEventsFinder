@@ -17,7 +17,7 @@ $document = phpQuery::newDocument($data); //Загружаем полученн�
 $hentry = $document->find('div#graph-content > div');
 
 $newTicket = [
-	'pegetitle' => null
+	'pagetitle' => null
 	, 'content' => null
 	, 'date' => $date
 	, 'img' => null

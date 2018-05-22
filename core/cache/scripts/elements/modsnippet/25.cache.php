@@ -1,5 +1,5 @@
-<?php
-$tvEventType = $modx->getObject('modTemplateVar', array('name'=>'event_type'));
+<?php  return '
+$tvEventType = $modx->getObject(\'modTemplateVar\', array(\'name\'=>\'event_type\'));
 $tvEventTypeArray = $tvEventType->toArray();
 $elementsString = $tvEventTypeArray["elements"];
 $elementsArray = explode("||", $elementsString);
@@ -43,10 +43,12 @@ foreach ($elementsArray as $key => $eventType) {
 
 	$checked = ($key == 0) ? "checked" : "";
 
-	echo "<p class='generated'>
+	echo "<p class=\'generated\'>
 	    <label>
-	      <input id='{$eventType}' name='group1' type='radio' {$checked} />
+	      <input id=\'{$eventType}\' name=\'group1\' type=\'radio\' {$checked} />
 	      <span>{$text}</span>
 	    </label>
   	</p>";
 }
+return;
+';

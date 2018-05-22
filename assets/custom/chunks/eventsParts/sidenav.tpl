@@ -7,7 +7,8 @@
               </div>
               <div class="collapsible-body">
                   <form id="event-types-filter" action="#">
-                      <p>
+                      [[!tvViewer]]
+                      <!-- <p>
                         <label>
                           <input id="all" name="group1" type="radio" checked />
                           <span>ВСЕ</span>
@@ -54,7 +55,7 @@
                           <input  id="free" name="group1" type="radio" />
                           <span>FREE</span>
                         </label>
-                      </p>
+                      </p> -->
                   </form>
               </div>
           </li>

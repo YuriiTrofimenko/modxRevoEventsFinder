@@ -1,4 +1,5 @@
 <?php
+
 $tvEventType = $modx->getObject('modTemplateVar', array('name'=>'event_type'));
 $tvEventTypeArray = $tvEventType->toArray();
 $elementsString = $tvEventTypeArray["elements"];
@@ -50,3 +51,4 @@ foreach ($elementsArray as $key => $eventType) {
 	    </label>
   	</p>";
 }
+return;

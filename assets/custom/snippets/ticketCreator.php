@@ -10,11 +10,14 @@ function checkTicket($_parentId, $_newTicket){
 	    'parent' => $_parentId
 	    , 'pagetitle' => $_newTicket['pagetitle']
 	    ];
-	$resources = $GLOBALS['modx']->getCollection('modResource', $where);
+	//$resources = $GLOBALS['modx']->getCollection('modResource', $where);
+	$resources = $GLOBALS['modx']->getCollection('modResource');
 	//$output = '<p>Всего ресурсов: '.count($resources).'</p>';
 	foreach ($resources as $k => $res) {
 	  //$output .= '<p>['.$k.'] => '.$res->get('pagetitle').'</p>';
 	  $present = ($res->get('pagetitle') == $_newTicket['pagetitle']) ? true : $present;
+	  //echo $res->get('pagetitle')." -> ".$_newTicket['pagetitle']."<br>";
+	  //echo $res->get('pagetitle') == $_newTicket['pagetitle'];
 	}
 	//print $output;
 	return $present;

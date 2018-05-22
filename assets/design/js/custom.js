@@ -24,12 +24,12 @@
     //autocomplete
     $('input.autocomplete').autocomplete({
         data: autocompleteItems
-        , onAutocomplete: 
+        , onAutocomplete: onAutocompleteCallback
     });
 
     var eventsSearchAutocomplete = M.Autocomplete.getInstance($('input.autocomplete'));
 
-    console.dir(eventsSearchAutocomplete);
+    //console.dir(eventsSearchAutocomplete);
 
     $.ajax({
         url: "/events-ajax",
@@ -41,7 +41,7 @@
     }).done(function(newAutocompleteItems) {
         
         
-        console.log(newAutocompleteItems);
+        //console.log(newAutocompleteItems);
         eventsSearchAutocomplete.updateData(JSON.parse(newAutocompleteItems));
     });
 

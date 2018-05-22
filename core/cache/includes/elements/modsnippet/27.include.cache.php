@@ -1,5 +1,8 @@
 <?php
 
+require_once('/assets/custom/snippets/modxInit.php');
+require_once('/assets/custom/snippets/ticketCreator.php');
+//var_dump($GLOBALS['modx']);
 $output = '';
 if(isset($_REQUEST['action'])) {
 
@@ -11,22 +14,26 @@ if(isset($_REQUEST['action'])) {
 
 		case 'fetch-events-by-title':
 			$title = $_REQUEST['title'];
-			$output =
-				"[[!pdoPage?
-					&parents=`2`
-				    &element=`getTickets`
-				    &tpl=`eventsListItem`
-				    &tplWrapper=`eventsListOuter`
-				    &includeContent=`1`
-				    &includeTVs=`img,date,event_type,age_limit`
-				    &processTVs=`1`
-				    &where=`[{'pagetitle:=:$title'}]`
-				]]"
-			;
+			
+			$filters = ['pagetitle:LIKE'=>'%'.$title.'%'];
+			$where = $GLOBALS['modx']->toJSON($filters);
+
+			$config =
+				[
+	                'parents' => '2',
+	                'element' =>'getTickets',
+	                'tpl' => 'eventsListItem',
+	                'tplWrapper' => 'eventsListOuter',
+	                'includeContent' => '1',
+	                'includeTVs' => 'img,date,event_type,age_limit',
+	                'processTVs' => '1',
+	                'where' => $where
+		        ];
+	        $output = $modx->runSnippet('pdoPage', $config);
 			break;
 
 		case 'fetch-enents-titles':
-			require_once('/assets/custom/snippets/modxInit.php');
+			
 			$where = ['parent' => '2'];
 			$resources = $GLOBALS['modx']->getCollection('modResource', $where);
 			//var_dump($resources);
