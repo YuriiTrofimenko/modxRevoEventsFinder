@@ -20,10 +20,11 @@ if(isset($_REQUEST['date'])){
     //конвертируем формат даты, если он не Y-m-d а, например, d/m/Y
     $date = DateTime::createFromFormat('d-m-Y', $_REQUEST['date']);
     //$date = $date->format('Y-m-d H:i:s');
-    $date = $date->format('Y-m-d')." 00:00:00";
+    //$date = $date->format('Y-m-d')." 00:00:00";
+    $date = $date->format('Y-m-d');
     //$filter[] = 'date<='.$date; //ищем события, которые уже начались относительно заданой даты
   }
 }
 
-$filter[] = 'date=='.$date;
+$filter[] = 'date=='.$date.'%';
 return implode(',',$filter);
